@@ -1,7 +1,7 @@
 # ---
 # layout: archive
 # title: "Sitemap"
-# permalink: /about/
+# permalink: /sitemap/
 # author_profile: true
 # ---
 
