@@ -36,9 +36,6 @@ main:
   - title: "About me"
     url: /about/
 
-  # - title: "Talks"
-  #   url: /talks/    
-
   - title: "Experience"
     url: /experiences/    
     
@@ -47,12 +44,7 @@ main:
 
   - title: "Publications"
     url: /publication/
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-    
+   
   - title: "Contact"
     url: /contact/
-    
-  # - title: "Guide"
-  #   url: /markdown/
-
+\
