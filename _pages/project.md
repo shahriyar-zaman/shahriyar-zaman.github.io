@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "Projects"
 permalink: /project/
 author_profile: true
 redirect_from:
@@ -9,6 +8,7 @@ redirect_from:
 
 {% include base_path %}
 ======
+Projects
 * **CAM-KD: A Class Activation Map Based Approach Towards Knowledge Distillation**  
   - Developed a CAM-based knowledge distillation model, enhancing model compression beyond baseline methods.  
   - Improved CIFAR-10 performance compared to baseline distillation with a more explainable process by combining CAM and KD losses.
