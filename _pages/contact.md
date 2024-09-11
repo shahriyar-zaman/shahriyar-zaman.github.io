@@ -8,8 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
+- **Email**: shahriyar.zaman01 [at] gmail [dot] com  
+- **Email**: shahriyar.ridoy [at] northsouth [dot] edu
 
-Contact
-======
-- Email: [shahriyar.zaman01@gmail.com](mailto:shahriyar.zaman01@gmail.com)  
-- Email: [shahriyar.ridoy@northsouth.edu](mailto:shahriyar.ridoy@northsouth.edu)
+- **Website**: [https://shahriyar-zaman.github.io](https://shahriyar-zaman.github.io)
