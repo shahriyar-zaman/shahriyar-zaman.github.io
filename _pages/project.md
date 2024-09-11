@@ -1,6 +1,6 @@
 ---
 layout: archive
-<!-- title: "CV" -->
+title: "Projects"
 permalink: /project/
 author_profile: true
 redirect_from:
@@ -8,7 +8,6 @@ redirect_from:
 ---
 
 {% include base_path %}
-
 Projects
 ======
 * **CAM-KD: A Class Activation Map Based Approach Towards Knowledge Distillation**  
@@ -27,3 +26,4 @@ Projects
 * **12-bits RISC-V Processor**  
   - Designed and implemented a 12-bit RISC-V processor using assembler and Logisim simulation.  
   - Developed a program to convert assembly language to machine code, executing R-type, I-type, and J-type instructions.
+
