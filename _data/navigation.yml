@@ -43,7 +43,7 @@ main:
     url: /project/
 
   - title: "Publications"
-    url: /publication/
+    url: /publication_list/
    
   - title: "Contact"
     url: /contact/
