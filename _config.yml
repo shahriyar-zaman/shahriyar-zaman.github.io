@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Shahriyar Zaman Ridoy"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Shahriyar Zaman Ridoy"
 description              : &description "Teaching Assistant at North South University"
