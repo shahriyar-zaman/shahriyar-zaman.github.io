@@ -8,51 +8,29 @@ redirect_from:
 ---
 
 {% include base_path %}
-
-Education
+Research Experience
 ======
-**North South University, Dhaka, Bangladesh**  
-*Bachelor of Science in Computer Science and Engineering (Expected Graduation: 2024)*  
-**CGPA**: 3.88/4.00 (Top 2%)  
-*Specialization*: Natural Language Processing, Deep Learning, Machine Learning  
-- Achieved an average of more than 90% marks  
-- Awarded summa cum laude distinction  
-- Received a 75% merit-based scholarship  
-
-Work Experience
-======
-**Research Assistant, NLP**  
+**Research Assistant (Part-time), Natural Language Processing (NLP)**  
 *North South University, Dec. 2023 - Feb. 2024*  
 *Supervisor*: Dr. Mohammad Rashedur Rahman  
-- Conducted data annotation for multiple datasets, ensuring high accuracy  
-- Assisted in data collection and methodology refinement  
+- Conducted detailed data annotation for multiple datasets, ensuring high accuracy and consistency.  
+- Assisted in data collection, gathering relevant data points from various sources to support research goals.  
+- Collaborated with the research team to refine data collection methodologies, enhancing data reliability.
 
+Competitive Programming Experience
+======
+**Programming Contestant**  
+*NSU Problem Solvers, Jun. 2021 - Feb. 2023*  
+- Participated in competitions on ICPC, Codeforces, LightOJ, Meta Hacker Cup, and Vjudge.  
+- Regular participant in the ICPC Asia Dhaka Regional Site Online Preliminary Contest and received *Honorable Mention*.  
+- Solved approximately 700 problems across various online judges like Codeforces, Codechef, LightOJ, and Google Codejam.  
+- Mentored students in Data Structures and Algorithms.
+
+Teaching Experience
+======
 **Teaching Assistant**  
-*North South University, Feb. 2023 - Present*  
-- Conducted tutorials for CSE 225 (Data Structures) and CSE 215 (OOP)  
-- Graded assignments and provided detailed feedback  
-- Assisted in proctoring quizzes and exams  
+*Department of Electrical and Computer Engineering, North South University, Feb. 2023 - Present*  
+- Conducted tutorial sessions to provide additional support and clarification on course material for CSE 225 (Data Structures and Algorithms) and CSE 215 (Programming Language II).  
+- Graded homework assignments and provided detailed feedback to students.  
+- Assisted in proctoring quizzes and exams, ensuring academic integrity.
 
-Skills
-======
-**Programming Languages**: Python, C++, Java, SQL, PHP  
-**Frameworks & Tools**: TensorFlow, PyTorch, Scikit-learn, AutoCAD  
-**Technical Skills**: Machine Learning, Natural Language Processing, Deep Learning, Data Analysis  
-**Soft Skills**: Problem-solving, Team Collaboration, Communication  
-
-Projects
-======
-**CAM-KD: Class Activation Map-Based Knowledge Distillation**  
-- Developed CAM-based knowledge distillation model improving CIFAR-10 performance  
-
-**Multiclass Vulnerability Detection in Source Code Using Draper VDISC Dataset**  
-- Implemented LLM-based models (CodeBERT, GraphCodeBERT, UniXcoder) for code vulnerability detection  
-
-**Predictive Insights into Early Marriage in Bangladesh**  
-- Developed machine learning models for early marriage prediction using socio-economic data  
-
-Service and Leadership
-======
-**NSU Problem Solvers**  
-- Regular ICPC participant  
-- Mentored students in Data Structures and Algorithms
