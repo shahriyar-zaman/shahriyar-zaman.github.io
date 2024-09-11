@@ -8,7 +8,6 @@ redirect_from:
 ---
 
 {% include base_path %}
-Projects
 ======
 * **CAM-KD: A Class Activation Map Based Approach Towards Knowledge Distillation**  
   - Developed a CAM-based knowledge distillation model, enhancing model compression beyond baseline methods.  
