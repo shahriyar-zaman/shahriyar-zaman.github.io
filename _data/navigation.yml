@@ -34,7 +34,7 @@
 
 main:
   - title: "About me"
-    url: /about/
+    # url: /about/
 
   - title: "Experience"
     url: /experiences/    
