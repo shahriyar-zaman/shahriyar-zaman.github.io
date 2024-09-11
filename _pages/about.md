@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Shahriyar Zaman Ridoy, a **Computer Science and Engineering graduate** with **summa cum laude distinction** from North South University, specializing in Artificial Intelligence with a focus on Natural Language Processing and Machine Learning. Previously, I worked with NLP and Machine Learning under the supervision of **Dr. Mohammad Rashedur Rahman**, focusing on using large language models (LLMs) for clinical text processing and Low resource language(Bangla). I have also worked on several **NLP research papers** under his supervision.
+I am Shahriyar Zaman Ridoy, a **Computer Science and Engineering graduate** with **summa cum laude distinction** from <a href="https://www.northsouth.edu/" target="_blank">North South University</a>, specializing in Artificial Intelligence with a focus on Natural Language Processing and Machine Learning. Previously, I worked with NLP and Machine Learning under the supervision of <a href="https://scholar.google.ca/citations?user=L9S6rlUAAAAJ&hl=en" target="_blank">Dr. Mohammad Rashedur Rahman</a>, focusing on using large language models (LLMs) for clinical text and Low-resource language (Bangla). I have also worked on several **NLP research papers** under his supervision.
 
 I am also a competitive programmer and currently work as a Teaching Assistant in the Electrical and Computer Engineering department at North South University, guiding students in **data structures**, **algorithms**, and **programming languages**.
 
