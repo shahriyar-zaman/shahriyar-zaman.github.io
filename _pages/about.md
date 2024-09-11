@@ -13,12 +13,9 @@ I am also a competitive programmer and currently work as a Teaching Assistant in
 
 Research Interests
 ======
-- **Machine Learning**
-- **Multilingual NLP**  
-  - NLP for low-resource languages  
-  - Machine translation  
-  - Multilingual representation learning  
-  - Cross-lingual transfer learning  
+- Machine Learning
+- Natural Language Processing(NLP)
+- Computer Vision
 
 Favourite Quote
 ======
