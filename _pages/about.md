@@ -7,9 +7,23 @@ redirect_from:
   - /about.html
 ---
 
-I am Shahriyar Zaman Ridoy, a Computer Science graduate from North South University, specializing in Artificial Intelligence with a focus on Natural Language Processing and Machine Learning. My research involves using large language models (LLMs) for clinical text processing and vulnerability detection, under the supervision of Dr. Mohammad Rashedur Rahman. I am also a competitive programmer and currently work as a Teaching Assistant in the Electrical and Computer Engineering department at North South University, guiding students in data structures, algorithms, and programming languages.
+I am Shahriyar Zaman Ridoy, a **Computer Science and Engineering graduate** with **summa cum laude distinction** from North South University, specializing in Artificial Intelligence with a focus on Natural Language Processing and Machine Learning. Previously, I worked with NLP and Machine Learning under the supervision of **Dr. Mohammad Rashedur Rahman**, focusing on using large language models (LLMs) for clinical text processing and Low resource language(Bangla). I have also worked on several **NLP research papers** under his supervision.
 
-My updated CV can be found [<a href="https://drive.google.com/file/d/11hyDe2sR2uJC4frNXmgDvZP1daJBob9A/view?usp=drive_link" style="color: #FF0000;">here</a>].
+I am also a competitive programmer and currently work as a Teaching Assistant in the Electrical and Computer Engineering department at North South University, guiding students in **data structures**, **algorithms**, and **programming languages**.
+
+Research Interests
+======
+- **Machine Learning**
+- **Multilingual NLP**  
+  - NLP for low-resource languages  
+  - Machine translation  
+  - Multilingual representation learning  
+  - Cross-lingual transfer learning  
+
+Favourite Quote
+======
+“Whatever your hand finds to do, do it with all your might”
+
 
 <!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
