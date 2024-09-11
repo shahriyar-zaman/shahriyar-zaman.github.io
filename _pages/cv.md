@@ -40,7 +40,7 @@ Skills
 * **Technical Skills**: Machine Learning, Natural Language Processing, Deep Learning, Data Analysis  
 * **Soft Skills**: Problem-solving, Team Collaboration, Communication  
 
-Publications
+<!-- Publications
 ======
 <ul>{% for post in site.publications reversed %}
   {% include archive-single-cv.html %}
@@ -56,7 +56,7 @@ Teaching
 ======
 <ul>{% for post in site.teaching reversed %}
   {% include archive-single-cv.html %}
-{% endfor %}</ul>
+{% endfor %}</ul> -->
 
 Projects
 ======
