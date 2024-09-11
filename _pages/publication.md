@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /publication/
+permalink: /publication_list/
 author_profile: true
 redirect_from:
   - /resume
