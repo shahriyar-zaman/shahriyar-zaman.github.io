@@ -45,7 +45,7 @@ main:
     url: /publication_list/
     
   - title: "CV"
-    url: /cv/
+    url: /my-cv/
    
   - title: "Contact"
     url: /contact/
