@@ -10,5 +10,5 @@ redirect_from:
 {% include base_path %}
 
 <p>
-    You can view my full CV <a href="https://drive.google.com/file/d/1QGhWx6lFcwB6arP3HOPXvsArochrvs9W/view?usp=drive_link" target="_blank">here</a>.
+    You can view my full CV <a href="https://drive.google.com/file/d/1QGhWx6lFcwB6arP3HOPXvsArochrvs9W/view?usp=sharing" target="_blank">here</a>.
 </p>
