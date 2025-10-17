@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: <a href='https://www.northsouth.edu/'>North South University</a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Dhaka, Bangladesh</p>
+    <p><a href="mailto:shahriyar.zaman01@gmail.com">shahriyar.zaman01@gmail.com</a></p>
+    <p>Open to PhD/MS opportunities · Fall 2026 🎓</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi 👋! My research focuses on **vision–language reasoning**, **geo-temporal understanding**, and **ethical NLP**—with an emphasis on trustworthy, culturally aware evaluation. I’m especially interested in **multimodal reasoning**, **adversarial attacks** and **specially designed defense mechanisms** for **autoregressive models**, **trustworthy NLP**, and **computational social systems**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Currently, I’m a **Lab Instructor** in the Department of Electrical & Computer Engineering at **[North South University](https://www.northsouth.edu/)** and a **Research Intern** at the **[AIISC](https://aiisc.ai/)**, University of South Carolina (USA), collaborating with **[Dr. Amitava Das](https://scholar.google.com/citations?user=HYpfhaEAAAAJ&hl=en)** on adversarial robustness. I also collaborate on **geo-temporal and geospatial understanding** with **[Dr. Md. Rizwan Parvez](https://scholar.google.com/citations?user=KhC8rtcAAAAJ&hl=en)**, Research Scientist at **[QCRI](https://www.qcri.org/)**. Previously, I worked with **[Dr. Shafin Rahman](https://scholar.google.com/citations?user=Pe8C-SUAAAAJ&hl=en)** and **[Dr. Nabeel Mohammad](https://scholar.google.com/citations?user=w5djOYsAAAAJ&hl=en)** on vision–language reasoning at North South University, co-leading an **EMNLP 2025 Industry Track** paper. My work has appeared at **EMNLP**, **IEEE BigData**, and **IEEE IS**, and I served as a **reviewer** for the **ACL Student Research Workshop (SRW) 2025**.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I graduated **summa cum laude (top 2%)** in Computer Science & Engineering from **[North South University](https://www.northsouth.edu/)** and received a **Best Paper Award** at **IEEE IS 2024** (Varna, Bulgaria).
+
+I’m **open to PhD opportunities for Fall 2026**—especially in labs working on **robust multimodal reasoning**, **evaluation datasets/tooling**, and **culturally aligned AI, safety, and security**.
