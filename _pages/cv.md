@@ -4,8 +4,169 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+cv_pdf: https://drive.google.com/file/d/15CkPZMaIAOeRN89n1fa--gsPCJQ6Dhd9/view?usp=sharing # you can also use external links here
+description:
 toc:
   sidebar: left
 ---
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: "Shahriyar Zaman Ridoy"
+    - name: Email
+      value: "shahriyar.zaman01@gmail.com"
+    - name: Website
+      value: "<a href=\"https://shahriyar-zaman.github.io/\">shahriyar-zaman.github.io</a>"
+    - name: Google Scholar
+      value: "<a href=\"https://scholar.google.com/citations?user=Tj7LsaQAAAAJ&hl=en\">Tj7LsaQAAAAJ</a>"
+    - name: GitHub
+      value: "<a href=\"https://github.com/shahriyar-zaman\">shahriyar-zaman</a>"
+    - name: LinkedIn
+      value: "<a href=\"https://www.linkedin.com/in/shahriyar-zaman/\">shahriyar-zaman</a>"
+    - name: Languages
+      value: "English, Bangla"
+    - name: Location
+      value: "Dhaka, Bangladesh"
+
+- title: Education
+  type: time_table
+  contents:
+    - title: "B.Sc. in Computer Science & Engineering (Summa Cum Laude, Top 2%)"
+      institution: "North South University, Dhaka, Bangladesh"
+      year: "2020–2024"
+      description:
+        - "CGPA 3.88/4.00; Major GPA 3.92/4.00; 75% merit scholarship; Avg ≈97%."
+        - "Focus: Natural Language Processing, Machine Learning, Pattern Recognition."
+        - title: "Thesis / Highlights"
+          contents:
+            - "Thesis: Context-Aware Data Cleaning Pipeline for Clinical Text and Low-Resource Bangla."
+            - "Best Paper Award — IEEE IS 2024 (Varna, Bulgaria)."
+            - "Journal follow-up — SN Computer Science (Springer Nature), 2025."
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: "Lab Instructor — CSE225L (Data Structures & Algorithms Lab), CSE115L"
+      institution: "Department of ECE, North South University"
+      year: "Feb 2025 – Present"
+      description:
+        - "Delivered coding-focused labs, debugging clinics, and assessments."
+        - "Lab Instructor Coordinator (CSE225L): updated manuals, optimized problem sets, standardized workflows."
+    - title: "Research Collaborator — Multimodal LLM Agents & Geo-Temporal VLMs"
+      institution: "Qatar Computing Research Institute (QCRI) — Remote"
+      year: "Jun 2025 – Present"
+      description:
+        - "Developed evaluation protocols; two VLM evaluation submissions to ICLR 2026."
+        - "Supervised by Md Rizwan Parvez (Scientist, QCRI)."
+    - title: "Research Intern — LLM/VLM Robustness, Diffusion Models"
+      institution: "Artificial Intelligence Institute, University of South Carolina (AIISC) — Remote"
+      year: "Sep 2024 – Jul 2025"
+      description:
+        - "Hallucination detection for text-to-image/VLMs (Qwen-VL, LLaVA); COCO + synthetic T2I evaluations."
+        - "Explored speculative-decoding defenses for diffusion robustness."
+        - "Collaborated with Prof. Amitava Das (BITS Pilani; ex-AIISC), Aman Chadha (AWS), Vinija Jain (Meta AI)."
+    - title: "Teaching Assistant — CSE225 (Data Structures & Algorithms), CSE215 (OOP)"
+      institution: "North South University"
+      year: "Feb 2023 – Jan 2025"
+      description:
+        - "Mentored 160+ students/semester; tutorials; grading; detailed feedback."
+    - title: "Research Assistant — NLP"
+      institution: "North South University"
+      year: "Dec 2023 – Feb 2024"
+      description:
+        - "Built a context-aware Bangla text-cleaning pipeline for transformer models; up to +4% accuracy; journal follow-up in SN Computer Science."
+
+
+- title: Honors & Awards
+  type: time_table
+  contents:
+    - year: "2024"
+      items:
+        - "Best Paper Award — IEEE IS, Varna, Bulgaria."
+        - "Summa Cum Laude — North South University."
+    - year: "2020–2024"
+      items:
+        - "75% Merit Scholarship — Academic Excellence."
+    - year: "2025"
+      items:
+        - "SN Computer Science — journal follow-up to IEEE IS work."
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: "Lab Instructor"
+      institution: "Department of ECE, North South University"
+      year: "Feb 2025 – Present"
+      description:
+        - "CSE225L Data Structures & Algorithms Lab; CSE115L Programming Language I Lab."
+        - "Coordinator for CSE225L labs: manual updates, problem-set design, workflow standardization."
+    - title: "Teaching Assistant"
+      institution: "Department of ECE, North South University"
+      year: "Feb 2023 – Jan 2025"
+      description:
+        - "CSE225 Data Structures & Algorithms; CSE215 Programming Language II (OOP)."
+        - "Mentored 160+ students/semester; tutorials, grading, feedback."
+
+- title: Reviewing Services
+  type: list
+  contents:
+    - "Reviewer — ACL 2025 Student Research Workshop (SRW); reviewed 2 papers."
+
+- title: Competitive Programming
+  type: time_table
+  contents:
+    - title: "Programming Contestant — NSU Problem Solvers"
+      year: "Jun 2021 – Feb 2023"
+      description:
+        - "Participated in ICPC, Codeforces, AtCoder, Meta Hacker Cup, Vjudge."
+        - "<a href=\"https://drive.google.com/file/d/1DMeOO9qkxPSDkB_ChjgaQNoMJQ1kFsVI/view?usp=sharing\">ICPC Asia Dhaka Online Preliminary</a> — Honorable Mention."
+        - "Solved ~1000 problems across platforms; mentored DSA."
+
+- title: Certifications
+  type: time_table
+  contents:
+    - title: "Cohere Labs Open Science Community for ML Summer School"
+      institution: "Cohere Labs (sessions by experts from Meta, DeepMind, INRIA)"
+      year: "Summer 2025"
+      description:
+        - "<a href=\"https://credsverse.com/credentials/72dfe38a-e8b6-489c-974f-1819a30351b6\">Credential</a>"
+    - title: "Supervised Machine Learning: Regression and Classification"
+      institution: "Coursera"
+      year: "Mar 2024"
+      description:
+        - "<a href=\"https://www.coursera.org/account/accomplishments/verify/RDVTPXT85WSR\">Certificate</a>"
+    - title: "The Short Course on Data Science"
+      institution: "Prof. Jennifer Widom (Stanford) — Instructional Odyssey @ NSU"
+      year: "Mar 2024"
+      description:
+        - "<a href=\"https://drive.google.com/file/d/1PLVr7FKi91DLzLZ6EuWNf3ZNVHVpfr53/view?usp=sharing\">Certificate</a>"
+    - title: "ICPC Asia Dhaka Regional Site Online Preliminary Contest"
+      institution: "ICPC"
+      year: "Oct 2023"
+      description:
+        - "<a href=\"https://icpc.global/ICPCID/ZMDNZQ89IHYS\">ICPC ID</a>"
+
+- title: Technical Skills
+  type: list
+  contents:
+    - "Python, C++, C, Java, SQL"
+    - "PyTorch, TensorFlow, Keras, scikit-learn, Transformers"
+    - "Pandas, NumPy, Matplotlib"
+    - "Git, Docker, AutoCAD"
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: "Trustworthy & Multimodal AI"
+      items:
+        - "Geo-temporal/spatial reasoning in VLMs"
+        - "Hallucination detection and robustness (T2I/VLM)"
+    - title: "Ethics, Safety & Alignment"
+      items:
+        - "Multilingual/multicultural evaluation"
+        - "Calibration (ECE) and risk–coverage analysis"
+    - title: "Code Intelligence"
+      items:
+        - "Vulnerability detection with LLMs/graphs"
+
