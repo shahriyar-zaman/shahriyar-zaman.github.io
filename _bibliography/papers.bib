@@ -1,115 +1,146 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{ridoy2026spatialab,
+  title      = {SpatiaLab: Can Vision–Language Models Perform Spatial Reasoning in the Wild?},
+  author     = {Wasi, Azmine Toushik and Faisal, Wahid and Rahman, Abdur and Anik, Mahfuz Ahmed and Shahriar, Munem and Topu, Mohsin Mahmud and Meem, Sadia Tasnim and Priti, Rahatun Nesa and Mitu, Sabrina Afroz and Hoque, Md. Iqramul and Ridoy, Shahriyar Zaman and Ali, Mohammed Eunus and Hawsaly, Majd and Raza, Mohammad and Parvez, Md. Rizwan},
+  booktitle  = {International Conference on Learning Representations (ICLR)},
+  year       = {2026},
+  note       = {Under review},
+  abbr       = {ICLR},
+  selected   = {true},
+  pdf        = {https://openreview.net/pdf?id=fWWUPOb0CT},
+  url        = {https://openreview.net/forum?id=fWWUPOb0CT},
+  preview    = {SpatiaLab.png},
+  abstract   = {Spatial reasoning is a fundamental aspect of human cognition, yet it remains a major challenge for contemporary vision–language models (VLMs). Prior work largely relied on synthetic or LLM-generated environments with limited task designs and puzzle-like setups, failing to capture the real-world complexity, visual noise, and diverse spatial relationships that VLMs encounter. To address this, we introduce \textbf{\textsc{SpatiaLab}}, a comprehensive benchmark for evaluating VLMs’ spatial reasoning in realistic, unconstrained contexts.
+{\textsc{SpatiaLab}} comprises 1,400 visual question–answer pairs across six major categories: \textit{Relative Positioning, Depth \& Occlusion, Orientation, Size \& Scale, Spatial Navigation, and 3D Geometry}, each with five subcategories, yielding 30 distinct task types. Each subcategory contains at least 25 questions, and each main category includes at least 200 questions, supporting both multiple-choice and open-ended evaluation.Experiments across diverse state-of-the-art VLMs, including open- and closed-source models, reasoning-focused, and specialized spatial reasoning models, reveal a substantial gap in spatial reasoning capabilities compared with humans. In the multiple-choice setup, InternVL3.5-72B achieves 54.93\% accuracy versus 87.57\% for humans. In the open-ended setting, all models show a performance drop of around 10–25\%, with GPT-5-mini scoring highest at 40.93\% versus 64.93\% for humans. These results highlight key limitations in handling complex spatial relationships, depth perception, navigation, and 3D geometry. By providing a diverse, real-world evaluation framework, {\textsc{SpatiaLab}} exposes critical challenges and opportunities for advancing VLMs’ spatial reasoning, offering a benchmark to guide future research toward robust, human-aligned spatial understanding.}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{ridoy2026timespot,
+  title      = {TimeSpot: Benchmarking Geo-Temporal Understanding in Vision–Language Models in Real-World Settings},
+  author     = {Wasi*, Azmine Toushik and Ridoy*, Shahriyar Zaman and Tonmoy, Koushik Ahamed and Tshering, Kinga and Hasan, S. M. Muhtasimul and Faisal, Wahid and Mohiuddin, Tasnim and Parvez, Md. Rizwan},
+  booktitle  = {International Conference on Learning Representations (ICLR)},
+  year       = {2026},
+  note       = {Under review},
+  abbr       = {ICLR},
+  selected   = {true},
+  pdf        = {https://openreview.net/pdf?id=ZLTbUvfej2},
+  url        = {https://openreview.net/forum?id=ZLTbUvfej2},
+  preview    = {timespot.png},
+  abstract   = {Geo-temporal understanding, the ability to identify the location, time, and contextual features of an image from visual cues alone, is a fundamental aspect of human intelligence with wide-ranging applications, from disaster response to autonomous navigation and geography education. While recent vision–language models (VLMs) have shown progress in image geo-localization using conspicuous cues like landmarks or road signs, their ability to understand temporal signals and related spatial reasoning cues remains underexplored. To address this gap, we introduce \textbf{\textsc{TimeSpot}}, a comprehensive benchmark for evaluating real-world geo-temporal reasoning in VLMs. {\textsc{TimeSpot}} comprises 1,455 images spanning 80 countries, where models must infer temporal attributes (season, month, time of day, daylight phase) and geolocation attributes (continent, country, climate zone, environment type, latitude–longitude coordinates) directly from the visual input. In addition, it includes spatial reasoning tasks that require integrating geographical, spatial, and temporal cues to solve complex understanding problems. Unlike prior benchmarks that emphasize obvious cues or iconic imagery, {\textsc{TimeSpot}} prioritizes diverse and subtle settings, reflecting the difficulty of reasoning under real-world uncertainty. Our evaluation of state-of-the-art VLMs, including both open- and closed-source models, reveals consistently low performance across tasks, highlighting substantial challenges in achieving robust temporal and geographic reasoning. These findings underscore the pressing need for improved methods to enable reliable and trustworthy geo-temporal understanding in VLMs, paving the way for future research in this critical domain.}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@unpublished{ridoy2026bengalimoralbench,
+  title      = {BengaliMoralBench: A Benchmark for Auditing Ethical Reasoning in Large Language Models in Bengali Language and Culture},
+  author     = {Ridoy*, Shahriyar Zaman and Wasi*, Azmine Toushik and Tonmoy, Koushik Ahamed},
+  year       = {2026},
+  note       = {Under review at EACL 2026},
+  abbr       = {EACL},
+  selected   = {true},
+  preview    = {bengali_moralbench.png},
+  abstract   = {As multilingual Large Language Models (LLMs) gain traction across South Asia, their alignment with local ethical norms, particularly for Bengali, which is spoken by over 285 million people and ranked 6th globally, remains underexplored. Existing ethics benchmarks are largely English-centric and shaped by Western frameworks, overlooking cultural nuances critical for real-world deployment. To address this, we introduce \textbf{BengaliMoralBench}, the first large-scale ethics benchmark for the Bengali language and socio-cultural contexts. It covers five moral domains, Daily Activities, Habits, Parenting, Family Relationships, and Religious Activities, subdivided into 50 culturally relevant subtopics. Each scenario is annotated via native-speaker consensus using three ethical lenses: Virtue, Commonsense, and Justice ethics. We conduct systematic zero-shot evaluation of prominent multilingual LLMs, including Llama, Gemma, Qwen, and DeepSeek, using a unified prompting protocol and standard metrics. Performance varies widely (50-91\% accuracy), with qualitative analysis revealing consistent weaknesses in cultural grounding, commonsense reasoning, and moral fairness. \textbf{BengaliMoralBench} provides a foundation for responsible localization, enabling culturally aligned evaluation and supporting the deployment of ethically robust AI in diverse, low-resource multilingual settings such as Bangladesh.}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@unpublished{ridoy2026position_clinical_nlp,
+  title      = {Position: Real-World Clinical NLP Robustness Requires Messy, Multimodal, Longitudinal, Privacy-Preserving Corpora},
+  author     = {Wasi*, Azmine Toushik and Ridoy*, Shahriyar Zaman},
+  year       = {2026},
+  note       = {Under review at EACL 2026},
+  abbr       = {EACL},
+  pdf        = {https://.../clinical_nlp_position.pdf},
+  url        = {https://.../clinical_nlp_position},
+  preview    = {position_messy_clinic.png},
+  abstract   = {Real-world healthcare data is inherently complex, riddled with noise, incompleteness, heterogeneity, and temporal irregularities, making the development of clinically robust AI systems particularly challenging.
+Traditional AI models in healthcare are often developed on idealized, clean datasets that fail to reflect the operational realities of clinical settings. This limits their generalizability and effectiveness when deployed in real-world environments.
+There is a critical need for a paradigm shift toward methodologies that embrace the "messiness" of clinical data while ensuring patient privacy and ethical integrity. Current models and pipelines are ill-equipped to manage this complexity in a scalable, trustworthy manner.
+We introduce the concept of the "\textbf{\textit{Messy Clinic}}" dataset and a corresponding blueprint designed to guide the development of healthcare AI systems grounded in real-world data characteristics. This framework supports seamless multimodal data integration, spanning EHRs, imaging, genomics, and wearables, while incorporating advanced privacy-preserving techniques such as federated learning, synthetic data generation, and differential privacy.
+The blueprint offers (1) a structured methodology for longitudinal, multimodal data management; (2) robust AI/ML techniques tailored to noisy and incomplete inputs; and (3) a comprehensive governance framework addressing ethical concerns like consent, accountability, and bias mitigation.
+Embracing the "\textbf{\textit{Messy Clinic}}" paradigm represents a foundational shift in healthcare AI development, from artificial idealism to real-world robustness.
+ This approach promises to accelerate medical research, enable personalized care, and ultimately transform healthcare delivery by aligning AI systems with the authentic complexity of clinical practice.}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{ridoy2025capstone,
+  title      = {CAPSTONE: Composable Attribute-Prompted Scene Translation for Zero-Shot Vision--Language Reasoning},
+  author     = {Hossain*, Md. Ismail and Ridoy*, Shahriyar Zaman and Farazi, Moshiur and Mohammed, Nabeel and Rahman, Shafin},
+  booktitle  = {EMNLP Industry},
+  year       = {2025},
+  note       = {Accepted},
+  abbr       = {EMNLP-Industry},
+  selected   = {true},
+  pdf        = {https://.../capstone.pdf},
+  poster     = {https://.../capstone_poster.pdf},
+  url        = {https://.../capstone},
+  code       = {https://.../capstone_code},
+  preview    = {capstone.png},
+  abstract   = {Interpreting visual scenes with high-level reasoning is essential for many real-world applications, such as autonomous systems and content moderation, but training and maintaining Vision–Language Models (VLMs) remains resource-intensive and opaque. In this work, we present \textsc{CAPSTONE}, a lightweight, modular framework designed for industrial settings. Instead of relying on multimodal training or fine-tuning large models, \textsc{CAPSTONE} transforms outputs from off-the-shelf vision models into structured text prompts that can be interpreted by a frozen Large Language Model (LLM). This plug-and-play architecture enables reasoning over visual input without access to raw pixels, dramatically reducing computational cost and complexity. On the \textsc{POPE} dataset, our system, using a 7B LLM, outperforms several fully trained VLMs in zero-shot evaluations, while on the \textsc{VSR} benchmark, the 4B model achieves competitive results, together demonstrating strong generalization without retraining. \textsc{CAPSTONE} offers a scalable and interpretable alternative for companies looking to integrate visual reasoning capabilities without the burden of full-scale VLM pipelines.}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{ridoy2024enstack,
+  title      = {EnStack: An Ensemble Stacking Framework of Large Language Models for Enhanced Vulnerability Detection in Source Code},
+  author     = {Ridoy, Shahriyar Zaman and Shaon, Md. Shazzad Hossain and Cuzzocrea, Alfredo and Akter, Mst Shapna},
+  booktitle  = {IEEE International Conference on Big Data (BigData)},
+  pages      = {6356--6364},
+  address    = {Washington, DC, USA},
+  year       = {2024},
+  organization = {IEEE},
+  abbr       = {IEEE BigData},
+  selected   = {true},
+  pdf        = {https://arxiv.org/pdf/2411.16561},
+  url        = {https://arxiv.org/abs/2411.16561},
+  code       = {https://github.com/shahriyar-zaman/Vulenrability_Detection_in_Source_Code},
+  preview    = {enstack.jpg},
+  abstract   = {Automated detection of software vulnerabilities is
+critical for enhancing security, yet existing methods often strug-
+gle with the complexity and diversity of modern codebases. In this paper, we introduce EnStack, a novel ensemble stacking framework that enhances vulnerability detection using natural language processing (NLP) techniques. Our approach synergizes multiple pre-trained large language models (LLMs) specialized in code understanding—CodeBERT for semantic analysis, GraphCodeBERT for structural representation, and UniXcoder for cross-modal capabilities. By fine-tuning these models on the Draper VDISC dataset and integrating their outputs through meta-classifiers such as Logistic Regression, Support Vector Machines (SVM), Random Forest, and XGBoost, EnStack effectively captures intricate code patterns and vulnerabilities that individual models may overlook. The meta-classifiers consolidate the strengths of each LLM, resulting in a comprehensive model that excels in detecting subtle and complex vulnerabilities across diverse programming contexts. Experimental results demonstrate that EnStack significantly outperforms existing methods, achieving notable improvements in accuracy, precision, recall and F1-score. This work highlights the potential of ensemble LLM approaches in code analysis tasks and offers valuable insights into applying NLP techniques for advancing automated vulnerability detection.}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@unpublished{ahad2025-early-marriage-ml,
+  title      = {Predictive Insights into Early Marriage: Machine Learning Analysis in the Bangladeshi Context},
+  author     = {Ahad, Jawad Ibn and Akter, Zarin and Ridoy, Shahriyar Zaman and Momen, Sifat},
+  year       = {2025},
+  note       = {Manuscript in preparation},
+  abbr       = {Manuscript},
+  pdf        = {https://.../early-marriage-ml.pdf},
+  url        = {https://.../early-marriage-ml},
+  preview    = {early_marriage.png},
+  abstract   = {Child marriage remains a significant social issue, particularly in developing countries such as Bangladesh, where deep-rooted cultural traditions and socio-economic disparities perpetuate the practice despite legal restrictions and awareness campaigns. This study explores the underlying factors contributing to child marriage among Bangladeshi women, especially in rural and underdeveloped regions where traditional intervention strategies have struggled. By leveraging machine learning (ML) and natural language processing (NLP), we develop a predictive model to assess the likelihood of child marriage from individual demographic profiles. Our analysis focuses on key socio-economic, educational, and cultural factors, offering insights into regional variations across Bangladesh. We construct a novel dataset that combines macro- and micro-level socio-economic variables tailored to this problem. Model performance is evaluated across multiple algorithms, with ensemble Blending—particularly the EMNet configuration—achieving the strongest results, including accuracy (94.80%) and AUC (97.58%). We also evaluate large language models (LLMs) as prompt-based classifiers on relevant textual fields and as assistants for schema normalization and feature enrichment, benchmarking their outputs against supervised ML baselines. This data- and language-driven approach improves precision in identifying high-risk individuals and communities and yields actionable insights for policymakers. By integrating predictive analytics and LLM-based evaluation into intervention design, the work supports more targeted, effective policies to mitigate child marriage and promote long-term social empowerment.}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+
+@inproceedings{ridoy2024efficient,
+  title      = {An Efficient Text Cleaning Pipeline for Clinical Text for Transformer Encoder Models},
+  author     = {Ridoy, Shahriyar Zaman and Sultana, Jannat and Ria, Zinnat Fowzia and Uddin, Mohammed Arif and Rahman, Md. Hasibur and Rahman, Rashedur M.},
+  booktitle  = {IEEE 12th International Conference on Intelligent Systems (IS)},
+  pages      = {1--9},
+  address    = {Varna, Bulgaria},
+  year       = {2024},
+  organization = {IEEE},
+  abbr       = {IEEE IS},
+  award      = {🏆 Best Paper Award},
+  selected   = {true},
+  pdf        = {https://ieeexplore.ieee.org/abstract/document/10705199},
+  url        = {https://ieeexplore.ieee.org/abstract/document/10705199},
+  code       = {https://github.com/shahriyar-zaman/An_Efficient_Text_Cleaning_Pipeline_For_Clinical_Text_For_Transformer_Encoder_Models},
+  preview    = {efficient_text_cleaning.png},
+  abstract   = {It might be challenging to choose the best text preprocessing strategy in the field of natural language processing (NLP) due to the variety of techniques available. Given the popularity of transformer models, we wondered if preprocessing was necessary and, if so, what methods would improve the models' performance. Especially when working with clinical text data, accuracy is crucial. Our goal was to find an appropriate preprocessing pipeline for clinical texts that maintains or improves model performance. We experienced four common preprocessing techniques and their groupings on two datasets from MIMIC-3 and PubMed. We used four models: BERT base, BioBERT, BioClinicalBERT, and RoBERTa. The varied accuracy results from existing techniques inspired us to develop a new pipeline to improve accuracy. Our pipeline starts with removing repeated punctuation, normalizing the text with a CleanText function, and filtering less important words using TF-IDF scores to keep clinically applicable terms and moderate noise. Our results presented that our pipeline outperformed the base models. For the MIMIC-3 dataset, the BERT base model achieved 90.16\% accuracy, and for the PubMed dataset, BioBERT achieved 64.20\% accuracy. We also found that removing stop words decreased accuracy, while using TF-IDF either maintained or improved it up to 3\%. Additionally, as we removed less important words from the documents our pipeline considerably reduced training time up to 17\%.}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{faisal2025context,
+  title      = {Context-Aware Data Cleaning: Optimizing Bengali Text for Contextual Text Classification},
+  author     = {Faisal, Moshiur Rahman and Fahad, Abdur Rahman and Ridoy, Shahriyar Zaman and Sultana, Jannat and Ria, Zinnat Fowzia and Rahman, Md. Hasibur and Uddin, Mohammed Arif and Rahman, Rashedur M.},
+  journal    = {SN Computer Science},
+  volume     = {6},
+  number     = {5},
+  pages      = {422},
+  publisher  = {Springer Nature},
+  year       = {2025},
+  abbr       = {SNCS},
+  selected   = {true},
+  doi        = {10.1007/s42979-025-03891-9},
+  pdf        = {https://doi.org/10.1007/s42979-025-03891-9},
+  url        = {https://doi.org/10.1007/s42979-025-03891-9},
+  code       = {https://github.com/shahriyar-zaman/Context_Aware_Data_Cleaning},
+  preview    = {context_aware_data_cleaning.png},
+  abstract   = {In Natural Language Processing (NLP), textual data is foundational, yet it presents substantial challenges, especially for under-resourced languages like Bengali. The complexity and volume of Bengali textual data require sophisticated data cleaning techniques. Traditional methods often neglect critical contextual information essential for effective textual analysis. This study highlights the need for context-aware data cleaning, a methodology that maintains linguistic context while removing noise. The study compares context-aware and traditional data cleaning approaches tailored for Bengali text to improve the performance of contextual transformer-based models. Conventional techniques in this study include symbol and punctuation removal, stop-word elimination, stemming, and removing HTML tags or URLs. In contrast, context-aware techniques involve spelling correction, tagging HTML and URLs, preserving punctuation and emojis, and selectively removing less important words using TF-IDF. The current initiative assesses the impact of these strategies through rigorous dataset curation and extensive training in machine learning, deep learning, and transformer-based models on four prominent Bengali datasets: BEmoC, SentNoB, UBMEC, and EmoNoBa. Results show context-aware data cleaning significantly outperforms traditional methods, particularly in enhancing transformer-based model performance. The developed context-aware data cleaning pipeline integrates various techniques, achieving a baseline accuracy improvement of up to 4% across three of the four datasets. These findings underscore the importance of preserving sentence-level context in Bengali for optimal NLP performance while minimizing noise. Additionally, the research introduces a novel context-aware data cleaning pipeline and provides detailed algorithms for its implementation, advancing NLP research and applications in Bengali and similar linguistic contexts.}
 }
+
