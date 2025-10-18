@@ -433,11 +433,6 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-09-26-iclr-submissions/";
-            },},{id: "news-two-papers-submitted-to-eacl-2026-arr-october",
-          title: 'Two Papers Submitted to EACL 2026 (ARR October)',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/2025-10-07-eacl-submissions/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
