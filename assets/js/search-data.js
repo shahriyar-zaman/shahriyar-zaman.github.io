@@ -398,6 +398,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
+            },},{id: "news-received-best-paper-award-at-ieee-international-conference-on-intelligent-systems-2024",
+          title: 'Received Best Paper Award at IEEE International Conference on Intelligent Systems 2024',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-11-11-best-paper-award/";
             },},{id: "news-paper-published-in-ieee-bigdata-2024-proceedings",
           title: 'Paper Published in IEEE BigData 2024 Proceedings',
           description: "",
@@ -433,11 +438,6 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-10-07-eacl-submissions/";
-            },},{id: "news-received-best-paper-award-at-ieee-international-conference-on-intelligent-systems-2024",
-          title: 'Received Best Paper Award at IEEE International Conference on Intelligent Systems 2024',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/2025-11-11-best-paper-award/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
