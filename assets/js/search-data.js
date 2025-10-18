@@ -409,7 +409,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-new-research-collaboration-on-vision-language-alignment",
+          title: 'New Research Collaboration on Vision–Language Alignment',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-10-18-new-collaboration-announcement/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
