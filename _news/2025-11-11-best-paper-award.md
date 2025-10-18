@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Received Best Paper Award at IEEE International Conference on Intelligent Systems 2024"
-date: 2025-11-11
+date: 2024-11-11
 inline: false
 ---
 
