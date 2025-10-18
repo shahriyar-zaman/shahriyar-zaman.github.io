@@ -5,4 +5,4 @@ date: 2025-03-19
 inline: false
 ---
 
-Our research paper has been **accepted for publication** in the *Springer Nature Computer Science Journal (2025)*, highlighting contributions to **intelligent data processing and ethical AI**.
+Our research paper has been **accepted for publication** in the *Springer Nature Computer Science Journal (2025)*, highlighting contributions to **Text cleaning in mulilingual data**.
