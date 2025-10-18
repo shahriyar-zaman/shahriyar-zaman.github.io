@@ -398,10 +398,47 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-paper-published-in-ieee-bigdata-2024-proceedings",
+          title: 'Paper Published in IEEE BigData 2024 Proceedings',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",handler: () => {
+              window.location.href = "/news/2024-12-19-ieee-bigdata/";
+            },},{id: "news-joined-north-south-university-as-lab-instructor",
+          title: 'Joined North South University as Lab Instructor',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-02-01-lab-instructor/";
+            },},{id: "news-paper-accepted-to-springer-nature-computer-science",
+          title: 'Paper Accepted to Springer Nature Computer Science',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-03-19-springer-acceptance/";
+            },},{id: "news-serving-as-reviewer-for-acl-srw-2025",
+          title: 'Serving as Reviewer for ACL SRW 2025',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-06-10-acl-reviewer/";
+            },},{id: "news-paper-accepted-to-emnlp-2025-industry-track",
+          title: 'Paper Accepted to EMNLP 2025 Industry Track',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-09-25-emnlp-acceptance/";
+            },},{id: "news-two-vision-language-papers-submitted-to-iclr-2026",
+          title: 'Two Vision–Language Papers Submitted to ICLR 2026',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-09-26-iclr-submissions/";
+            },},{id: "news-two-papers-submitted-to-eacl-2026-arr-october",
+          title: 'Two Papers Submitted to EACL 2026 (ARR October)',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-10-07-eacl-submissions/";
+            },},{id: "news-received-best-paper-award-at-ieee-international-conference-on-intelligent-systems-2024",
+          title: 'Received Best Paper Award at IEEE International Conference on Intelligent Systems 2024',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2025-11-11-best-paper-award/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
