@@ -27,10 +27,12 @@ nav_order: 5
 
 ## Relevant Coursework (with grade)
 
+*Grading note:* **A** is considered the highest grade (equal to or above 93%).
+
 | Course | Grade |
 |:--|:--:|
 | **Natural Language Processing (Special Topic, CSE495B)** | **A** |
-| **Machine Learning (CSE445)** *(Intersession 2023)* | **A** |
+| **Machine Learning (CSE445)** | **A** |
 | Design & Analysis of Algorithms (CSE373) | **A** |
 | Data Structures & Algorithms (CSE225) | **A** |
 | Theory of Computation (CSE273) | **A** |
@@ -59,3 +61,4 @@ Offered under **Andrew Ng’s Machine Learning Specialization**, this course cov
 ### The Short Course on Data Science — *Jennifer Widom (Instructional Odyssey, NSU, Mar 2024)*  
 Delivered by **Stanford Professor Jennifer Widom**, this intensive short course focused on practical data-science fundamentals: data modeling and SQL, data cleaning/integration, exploratory analysis, and effective result communication. Included guided exercises to build reproducible analysis pipelines and visualization workflows.  
 🔗 **Certificate/Proof:** [View on Google Drive](https://drive.google.com/file/d/1PLVr7FKi91DLzLZ6EuWNf3ZNVHVpfr53/view)
+
