@@ -20,7 +20,7 @@ nav_order: 5
 - Received a **75% merit-based scholarship** for academic excellence.
 
 **Thesis:** *Context-Aware Data Cleaning Pipeline for Clinical Text and Low-Resource Language Bangla*  
-- **Best Paper Award** at [IEEE IS 2024](https://ieeexplore.ieee.org/abstract/document/10705199), Varna, Bulgaria.  
+- **Best Paper Award** at [IEEE International Conference on Intelligent Systems (IS) 2024](https://drive.google.com/file/d/1Jx1ypVfoxjk7_C7jL1nq6U5x2kbybVVh/view), Varna, Bulgaria.  
 - Two papers on the data-cleaning pipeline published in [IEEE IS 2024](https://ieeexplore.ieee.org/abstract/document/10705199) and [SN Computer Science (Springer Nature)](https://doi.org/10.1007/s42979-025-03891-9).
 
 ---
@@ -61,5 +61,6 @@ Offered under **Andrew Ng’s Machine Learning Specialization**, this course cov
 ### The Short Course on Data Science — *Jennifer Widom (Instructional Odyssey, NSU, Mar 2024)*  
 Delivered by **Stanford Professor Jennifer Widom**, this intensive short course focused on practical data-science fundamentals: data modeling and SQL, data cleaning/integration, exploratory analysis, and effective result communication. Included guided exercises to build reproducible analysis pipelines and visualization workflows.  
 🔗 **Certificate/Proof:** [View on Google Drive](https://drive.google.com/file/d/1PLVr7FKi91DLzLZ6EuWNf3ZNVHVpfr53/view)
+
 
 
