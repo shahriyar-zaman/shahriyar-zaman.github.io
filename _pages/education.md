@@ -60,7 +60,8 @@ Offered under **Andrew Ng’s Machine Learning Specialization**, this course cov
 
 ### The Short Course on Data Science — *Jennifer Widom (Instructional Odyssey, NSU, Mar 2024)*  
 Delivered by **Stanford Professor Jennifer Widom**, this intensive short course focused on practical data-science fundamentals: data modeling and SQL, data cleaning/integration, exploratory analysis, and effective result communication. Included guided exercises to build reproducible analysis pipelines and visualization workflows.  
-🔗 **Certificate/Proof:** [View on Google Drive](https://drive.google.com/file/d/1PLVr7FKi91DLzLZ6EuWNf3ZNVHVpfr53/view)
+🔗 **Certificate:** [View on Google Drive](https://drive.google.com/file/d/1PLVr7FKi91DLzLZ6EuWNf3ZNVHVpfr53/view)
+
 
 
 
