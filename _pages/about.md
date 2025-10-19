@@ -33,4 +33,4 @@ Currently, I’m a **Lab Instructor** in the Department of Electrical & Computer
 
 I graduated **summa cum laude (top 2%)** in Computer Science & Engineering from **[North South University](https://www.northsouth.edu/)** and received a **Best Paper Award** at **IEEE IS 2024** (Varna, Bulgaria).
 
-I’m **open to PhD/MS opportunities for Fall 2026**.
+<u>I am **actively seeking a PhD/MS position starting in Fall 2026**.</u>
