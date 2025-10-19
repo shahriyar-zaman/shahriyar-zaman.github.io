@@ -7,7 +7,7 @@ nav: true
 nav_order: 5
 ---
 
-## Education
+## 🎓 Education
 
 ### North South University — Dhaka, Bangladesh  
 **B.Sc. in Computer Science and Engineering** · **CGPA:** 3.88/4.00 *(top 2%)* · **Major GPA:** 3.92/4.00  
@@ -44,10 +44,10 @@ nav_order: 5
 
 ---
 
-## Additional Programs & Certifications
+## 📜 Additional Programs & Certifications
 
 ### Cohere Labs Open Science Community — ML Summer School *(Summer 2025)*  
-A free, open-science summer school hosted by Cohere Labs, featuring lectures and mentorship from researchers at **META**, **DeepMind**, **INRIA**, and **Cohere Labs**. Topics included distributed training, transformers, retrieval-augmented generation (RAG), and prompt evaluation. Collaborated in a hands-on lab to reproduce results and present a short demo.  
+A free, open-science summer school hosted by Cohere Labs, featuring lectures and mentorship from researchers at **META**, **DeepMind**, **INRIA**, and **Cohere Labs**. Topics included distributed training, transformers, retrieval-augmented generation (RAG), and prompt evaluation. 
 🔗 **Certificate:** [Verify on CredsVerse](https://credsverse.com/credentials/72dfe38a-e8b6-489c-974f-1819a30351b6) · **Channel:** [Cohere Labs YouTube](https://www.youtube.com/@CohereForAI)
 
 ---
@@ -61,4 +61,5 @@ Offered under **Andrew Ng’s Machine Learning Specialization**, this course cov
 ### The Short Course on Data Science — *Jennifer Widom (Instructional Odyssey, NSU, Mar 2024)*  
 Delivered by **Stanford Professor Jennifer Widom**, this intensive short course focused on practical data-science fundamentals: data modeling and SQL, data cleaning/integration, exploratory analysis, and effective result communication. Included guided exercises to build reproducible analysis pipelines and visualization workflows.  
 🔗 **Certificate/Proof:** [View on Google Drive](https://drive.google.com/file/d/1PLVr7FKi91DLzLZ6EuWNf3ZNVHVpfr53/view)
+
 
