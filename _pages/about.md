@@ -7,7 +7,7 @@ subtitle: <a href='https://www.northsouth.edu/'>North South University</a>
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false
+  image_circular: true
   more_info: >
     <p>Dhaka, Bangladesh</p>
     <p><a href="mailto:shahriyar.zaman01@gmail.com">shahriyar.zaman01@gmail.com</a></p>
