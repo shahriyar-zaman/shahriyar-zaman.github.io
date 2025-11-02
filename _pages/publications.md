@@ -9,12 +9,12 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-<!-- Bibsearch Feature -->
+## selected publications
+<p style="font-style: italic; color:#555; margin-top:-6px;">* denotes joint first author</p>
 
+<!-- Bibsearch Feature -->
 {% include bib_search.liquid %}
 
 <div class="publications">
-
 {% bibliography %}
-
 </div>
