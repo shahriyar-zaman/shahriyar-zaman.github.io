@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Publications categorized by year in reverse chronological order.  (**denotes joint first author**)
+description: Publications categorized by year in reverse chronological order.  * denotes joint first author.
 nav: true
 nav_order: 2
 ---
