@@ -440,7 +440,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-09-26-iclr-submissions/";
-            },},{id: "projects-project-1",
+            },},{id: "news-our-position-paper-on-developing-robust-clinical-ai-datasets-is-accepted-to-the-eurips-2025-workshop-on-multimodal-representation-learning-for-healthcare-mmrl4h",
+          title: 'Our position paper on ** Developing Robust Clinical AI Datasets** is accepted to...',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
