@@ -443,7 +443,12 @@ ninja.data = [{
             },},{id: "news-our-position-paper-on-developing-robust-clinical-ai-datasets-is-accepted-to-the-eurips-2025-workshop-on-multimodal-representation-learning-for-healthcare-mmrl4h",
           title: 'Our position paper on Developing Robust Clinical AI Datasets is accepted to the...',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "news-paper-accepted-at-iclr-2026-on-spatial-reasoning-in-vision-language-models",
+          title: 'Paper Accepted at ICLR 2026 on Spatial Reasoning in Vision–Language Models',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/iclr_paper_acceptance/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
