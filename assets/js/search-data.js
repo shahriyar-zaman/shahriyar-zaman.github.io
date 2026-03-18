@@ -448,6 +448,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/iclr_paper_acceptance/";
+            },},{id: "news-three-papers-submitted-to-arr-march-2026-on-symbolic-and-geospatial-reasoning",
+          title: 'Three Papers Submitted to ARR March 2026 on Symbolic and Geospatial Reasoning',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/arr_march_2026/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
