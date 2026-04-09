@@ -9,6 +9,7 @@
   note       = {ACL ARR 2026 March Submission (Under Review)},
   abbr       = {ACL ARR},
   selected   = {true}
+  preview    = {pda_methodology_fig.png}
 }
 
 @unpublished{ridoy2026geotemporal,
@@ -17,7 +18,8 @@
   year       = {2026},
   note       = {ACL ARR 2026 March Submission (Under Review)},
   abbr       = {ACL ARR},
-  selected   = {true}
+  selected   = {true},
+  preview    = {geospatial_geotemp_review.png}
 }
 
 @unpublished{ridoy2026cfgbench,
@@ -26,8 +28,23 @@
   year       = {2026},
   note       = {ACL ARR 2026 March Submission (Under Review)},
   abbr       = {ACL ARR},
-  selected   = {true}
+  selected   = {true},
+  preview    = {cfg_methodology.png}
   }
+
+@inproceedings{ridoy2026timespot,
+  title      = {TimeSpot: Benchmarking Geo-Temporal Understanding in Vision–Language Models in Real-World Settings},
+  author     = {Wasi*, Azmine Toushik and Ridoy*, Shahriyar Zaman and Tonmoy, Koushik Ahamed and Tshering, Kinga and Hasan, S. M. Muhtasimul and Faisal, Wahid and Mohiuddin, Tasnim and Parvez, Md. Rizwan},
+  booktitle  = {International Conference on Machine Learning (ICML)},
+  year       = {2026},
+  note       = {Under review},
+  abbr       = {ICML},
+  selected   = {true},
+  pdf        = {https://arxiv.org/pdf/2603.06687},
+  url        = {https://arxiv.org/pdf/2603.06687},
+  preview    = {timespot_first_fig.png},
+  abstract   = {Geo-temporal understanding, the ability to identify the location, time, and contextual features of an image from visual cues alone, is a fundamental aspect of human intelligence with wide-ranging applications, from disaster response to autonomous navigation and geography education. While recent vision–language models (VLMs) have shown progress in image geo-localization using conspicuous cues like landmarks or road signs, their ability to understand temporal signals and related spatial reasoning cues remains underexplored. To address this gap, we introduce \textbf{\textsc{TimeSpot}}, a comprehensive benchmark for evaluating real-world geo-temporal reasoning in VLMs. {\textsc{TimeSpot}} comprises 1,455 images spanning 80 countries, where models must infer temporal attributes (season, month, time of day, daylight phase) and geolocation attributes (continent, country, climate zone, environment type, latitude–longitude coordinates) directly from the visual input. In addition, it includes spatial reasoning tasks that require integrating geographical, spatial, and temporal cues to solve complex understanding problems. Unlike prior benchmarks that emphasize obvious cues or iconic imagery, {\textsc{TimeSpot}} prioritizes diverse and subtle settings, reflecting the difficulty of reasoning under real-world uncertainty. Our evaluation of state-of-the-art VLMs, including both open- and closed-source models, reveals consistently low performance across tasks, highlighting substantial challenges in achieving robust temporal and geographic reasoning. These findings underscore the pressing need for improved methods to enable reliable and trustworthy geo-temporal understanding in VLMs, paving the way for future research in this critical domain.}
+}
 
 @inproceedings{ridoy2026spatialab,
   title      = {SpatiaLab: Can Vision–Language Models Perform Spatial Reasoning in the Wild?},
@@ -44,23 +61,9 @@
 {\textsc{SpatiaLab}} comprises 1,400 visual question–answer pairs across six major categories: \textit{Relative Positioning, Depth \& Occlusion, Orientation, Size \& Scale, Spatial Navigation, and 3D Geometry}, each with five subcategories, yielding 30 distinct task types. Each subcategory contains at least 25 questions, and each main category includes at least 200 questions, supporting both multiple-choice and open-ended evaluation.Experiments across diverse state-of-the-art VLMs, including open- and closed-source models, reasoning-focused, and specialized spatial reasoning models, reveal a substantial gap in spatial reasoning capabilities compared with humans. In the multiple-choice setup, InternVL3.5-72B achieves 54.93\% accuracy versus 87.57\% for humans. In the open-ended setting, all models show a performance drop of around 10–25\%, with GPT-5-mini scoring highest at 40.93\% versus 64.93\% for humans. These results highlight key limitations in handling complex spatial relationships, depth perception, navigation, and 3D geometry. By providing a diverse, real-world evaluation framework, {\textsc{SpatiaLab}} exposes critical challenges and opportunities for advancing VLMs’ spatial reasoning, offering a benchmark to guide future research toward robust, human-aligned spatial understanding.}
 }
 
-@inproceedings{ridoy2026timespot,
-  title      = {TimeSpot: Benchmarking Geo-Temporal Understanding in Vision–Language Models in Real-World Settings},
-  author     = {Wasi*, Azmine Toushik and Ridoy*, Shahriyar Zaman and Tonmoy, Koushik Ahamed and Tshering, Kinga and Hasan, S. M. Muhtasimul and Faisal, Wahid and Mohiuddin, Tasnim and Parvez, Md. Rizwan},
-  booktitle  = {International Conference on Machine Learning (ICML)},
-  year       = {2026},
-  note       = {Under review},
-  abbr       = {ICML},
-  selected   = {true},
-  pdf        = {https://openreview.net/pdf?id=ZLTbUvfej2},
-  url        = {https://openreview.net/forum?id=ZLTbUvfej2},
-  preview    = {timespot.png},
-  abstract   = {Geo-temporal understanding, the ability to identify the location, time, and contextual features of an image from visual cues alone, is a fundamental aspect of human intelligence with wide-ranging applications, from disaster response to autonomous navigation and geography education. While recent vision–language models (VLMs) have shown progress in image geo-localization using conspicuous cues like landmarks or road signs, their ability to understand temporal signals and related spatial reasoning cues remains underexplored. To address this gap, we introduce \textbf{\textsc{TimeSpot}}, a comprehensive benchmark for evaluating real-world geo-temporal reasoning in VLMs. {\textsc{TimeSpot}} comprises 1,455 images spanning 80 countries, where models must infer temporal attributes (season, month, time of day, daylight phase) and geolocation attributes (continent, country, climate zone, environment type, latitude–longitude coordinates) directly from the visual input. In addition, it includes spatial reasoning tasks that require integrating geographical, spatial, and temporal cues to solve complex understanding problems. Unlike prior benchmarks that emphasize obvious cues or iconic imagery, {\textsc{TimeSpot}} prioritizes diverse and subtle settings, reflecting the difficulty of reasoning under real-world uncertainty. Our evaluation of state-of-the-art VLMs, including both open- and closed-source models, reveals consistently low performance across tasks, highlighting substantial challenges in achieving robust temporal and geographic reasoning. These findings underscore the pressing need for improved methods to enable reliable and trustworthy geo-temporal understanding in VLMs, paving the way for future research in this critical domain.}
-}
-
 @unpublished{ridoy2026bengalimoralbench,
   title      = {BengaliMoralBench: A Benchmark for Auditing Ethical Reasoning in Large Language Models in Bengali Language and Culture},
-  author     = {Ridoy*, Shahriyar Zaman and Wasi*, Azmine Toushik and Tonmoy, Koushik Ahamed},
+  author     = {Ridoy*, Shahriyar Zaman and Wasi*, Azmine Toushik and Tonmoy, Koushik Ahamed, Taki Hasan Rafi, Dong-Kyu Chae},
   year       = {2026},
   note       = {Under review at ACM FAccT 2026},
   abbr       = {ACM FAccT},
