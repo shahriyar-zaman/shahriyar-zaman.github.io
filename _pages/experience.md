@@ -20,13 +20,33 @@ nav_order: 6
 
 ---
 
-### Research Collaborator — Qatar Computing Research Institute (QCRI)  
-*Remote* · *Jun 2025 – Present*  
-**Focus:** Multimodal LLMs & **Agentic** AI for **code reasoning** and geospatial VLMs  
-<a href="https://www.hbku.edu.qa/en/qcri"><img alt="QCRI" src="https://img.shields.io/badge/QCRI-Research-8A2BE2?logo=qatar&logoColor=white"></a>
-- Develop and evaluate multimodal LLMs and agents for programming and **geospatial reasoning**.  
-- **Two VLM evaluation papers** submitted to **ICLR 2026**.  
-- Supervised by **[Md Rizwan Parvez, PhD](https://scholar.google.com/citations?hl=en&user=KhC8rtcAAAAJ&view_op=list_works&sortby=pubdate)** (Scientist, QCRI).
+- **Research Collaborator, Qatar Computing Research Institute (QCRI)** ........................................ **Remote**  
+  **Focus:** Multimodal LLMs & **Agentic** AI, Spatial Reasoning, Geospatial Reasoning, and Geotemporal Reasoning  
+  **Supervised by:** [Md Rizwan Parvez, PhD](https://scholar.google.com/citations?hl=en&user=KhC8rtcAAAAJ&view_op=list_works&sortby=pubdate)  
+  *Jun. 2025 – Present*  
+  - Develop and evaluate multimodal LLMs and VLMs for spatial reasoning and geospatial/geotemporal reasoning.  
+  - One paper on **spatial reasoning** accepted at **ICLR 2026**.  
+  - Lead author of one paper on **geotemporal reasoning** under review at **ICML 2026**.  
+  - Lead author of one paper on **geospatial and geotemporal reasoning** under review at **ACL ARR March 2026**.
+
+---  
+
+
+- **Research Collaboration, Cognitive Agents and Interaction Lab, University of Dhaka** ........................................ **Remote**  
+  **Focus:** Symbolic reasoning in LLMs and formal reasoning benchmarks  
+  **Supervised by:** [Dr. Md Mosaddek Khan](https://scholar.google.com/citations?hl=en&user=IIb6f_4AAAAJ&view_op=list_works&sortby=pubdate)  
+  *Dec. 2025 – Present*  
+  - Investigated the symbolic reasoning abilities of LLMs, focusing on formal language tasks and structured reasoning evaluation.  
+  - Co-authored two papers on LLM reasoning submitted to **ACL ARR March 2026**.
+    
+---
+
+- **Research Collaboration, Apurba-NSU R&D Lab** ........................................ **North South University**  
+  **Focus:** Model compression techniques (knowledge distillation) for large language models (LLMs)  
+  **Supervisors:** [Dr. Nabeel Mohammad](https://ece.northsouth.edu/people/dr-nabeel-mohammed/), [Dr. Shafin Rahman](https://sites.google.com/site/rshafin)  
+  *Nov. 2024 – Jun. 2025*  
+  - Conducted research on model compression techniques (knowledge distillation) for large language models (LLMs).  
+  - Paper accepted to **EMNLP 2025 Industry Track** as a **joint first author**, proposing a vision-language reasoning pipeline that maintains competitive performance with significantly reduced computational cost.
 
 ---
 
