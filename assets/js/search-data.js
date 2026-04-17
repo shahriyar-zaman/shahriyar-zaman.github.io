@@ -453,6 +453,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/arr_march_2026/";
+            },},{id: "news-bengalimoralbench-accepted-to-acm-facct-2026",
+          title: 'BengaliMoralBench Accepted to ACM FAccT 2026',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/BengaliMoralBench_FAccT_2026_Post/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
