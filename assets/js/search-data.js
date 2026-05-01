@@ -458,6 +458,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/BengaliMoralBench_FAccT_2026_Post/";
+            },},{id: "news-one-paper-as-co-first-author-accepted-to-icml-2026-main-track",
+          title: 'One Paper as Co-First Author Accepted to ICML 2026 Main Track',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/one_paper_cofirst_icml_2026/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
