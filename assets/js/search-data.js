@@ -463,6 +463,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/one_paper_cofirst_icml_2026/";
+            },},{id: "news-paper-accepted-to-icml-2026-workshop-on-human-ai-co-creativity",
+          title: 'Paper Accepted to ICML 2026 Workshop on Human-AI Co-Creativity',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-05-23-icml-human-ai-cocreativity/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
