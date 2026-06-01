@@ -468,6 +468,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-05-23-icml-human-ai-cocreativity/";
+            },},{id: "news-multiple-papers-submitted-to-arr-may-2026-cycle",
+          title: 'Multiple Papers Submitted to ARR May 2026 Cycle',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-05-26-arr-may-2026-cycle/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
