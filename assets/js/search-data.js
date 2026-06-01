@@ -473,6 +473,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-05-26-arr-may-2026-cycle/";
+            },},{id: "news-serving-as-reviewer-for-ai4math-workshop-of-icml-2026",
+          title: 'Serving as Reviewer for AI4Math Workshop of ICML 2026',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-05-31-ai4math-workshop-icml-2026-reviewer/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
