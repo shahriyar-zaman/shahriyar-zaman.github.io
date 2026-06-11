@@ -31,19 +31,19 @@ Hi! I study when language and vision–language models are truly reasoning — a
 
 ## Research Focus
 
-# Grounded Multimodal Reasoning
+## Grounded Multimodal Reasoning
 I evaluate whether vision–language models understand space, time, and composition.
 **Work:** TimeSpot **[ICML 2026]** · SpatiaLab **[ICLR 2026]** · InvariantBench **[under review, NeurIPS 2026]** · CAPSTONE **[EMNLP 2025]**
 
-# Structured and Symbolic Reasoning
+## Structured and Symbolic Reasoning
 I test whether LLMs can generate executable formal systems such as grammars, pushdown automata, and Turing machines.
 **Work:** Beyond Build Validity **[under review, ACL ARR 2026]** · Can LLMs Design Computational Machines? **[to be committed EMNLP 2026]** · From Language Specifications to Executable Turing Machines **[under review, ACL ARR 2026]**
 
-# Safe and Robust Foundation Models
+## Safe and Robust Foundation Models
 I work on hallucination detection, adversarial robustness, efficient modeling, and clinical-text systems.
 **Work:** CAPSTONE **[EMNLP 2025]** *(cross-listed)* · SEISMOS **[under review, NeurIPS 2026]** · Clinical-text Pipeline **[Best Paper, IEEE IS 2024]**
 
-# Culturally Grounded NLP
+## Culturally Grounded NLP
 I build Bengali-focused evaluations and socially aware NLP systems for underrepresented settings.
 **Work:** BengaliMoralBench **[FAccT 2026]** · July Uprising crisis sentiment **[under review, ACL ARR 2026]** · PANCHINI **[under review, Array]**
 
