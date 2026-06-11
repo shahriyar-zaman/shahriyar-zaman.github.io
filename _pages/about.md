@@ -29,6 +29,17 @@ latest_posts:
 
 Hi! When a model aces a benchmark, is it reasoning — or memorizing the shortcut? My research builds trustworthy evaluations that tell the difference for large language and vision–language models, then designs methods to close the gaps, across vision–language reasoning, geo-temporal and geo-spatial understanding, and cultural NLP.
 
+Hi! When a model aces a benchmark, is it reasoning — or memorizing the shortcut? My research builds trustworthy evaluations that tell the difference for large language and vision–language models, then designs methods to close the gaps, across vision–language reasoning, geo-temporal and geo-spatial understanding, and cultural NLP.
+
+<div class="row justify-content-center mt-3 mb-3">
+  <div class="col-12">
+    {% include figure.liquid path="assets/img/research_overview_final@2x.png"
+       class="img-fluid rounded z-depth-1" zoomable=true
+       alt="Research overview: distinguishing genuine reasoning from shortcut memorization across four research thrusts" %}
+  </div>
+</div>
+
+
 [1] <u><strong>Grounded multimodal reasoning and evaluation</strong></u> — whether vision–language models truly reason about space, time, and composition or just exploit shortcuts: diagnostic benchmarks *TimeSpot* (ICML 2026), *SpatiaLab* (ICLR 2026), and *InvariantBench* (under review, NeurIPS 2026), plus methods like *CAPSTONE* (EMNLP 2025) and a geo-spatial/geo-temporal survey (under review, ACL ARR 2026).
 
 [2] <u><strong>Structured and symbolic reasoning in LLMs</strong></u> — how far models go as designers of formal systems across the Chomsky hierarchy: grammars in *Beyond Build Validity* (under review, ACL ARR 2026), pushdown automata in *Can LLMs Design Computational Machines?* (to be committed EMNLP 2026), and Turing machines in *From Language Specifications to Executable Turing Machines* (under review, ACL ARR 2026) — grounding evaluation in executable, checkable artifacts.
