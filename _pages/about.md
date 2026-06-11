@@ -59,6 +59,7 @@ I graduated **summa cum laude (top 2%)** in Computer Science & Engineering from 
 
 I also collaborate with **[Dr. Md. Rizwan Parvez](https://scholar.google.com/citations?user=KhC8rtcAAAAJ&hl=en)** at the **Qatar Computing Research Institute (QCRI)** on geo-temporal and geo-spatial understanding of foundation models. Previously, I worked with **[Dr. Shafin Rahman](https://scholar.google.com/citations?user=Pe8C-SUAAAAJ&hl=en)** and **[Dr. Nabeel Mohammed](https://scholar.google.com/citations?user=w5djOYsAAAAJ&hl=en)** on vision–language reasoning at North South University.
 
-My work has appeared at **ICML**, **ICLR**, **EMNLP**, **FAccT**, **IEEE BigData**, and **IEEE IS**, including a **Best Paper Award at IEEE IS 2024**. I have also served as a reviewer for the **ACL Student Research Workshop (SRW) 2025** and the **AI4Math Workshop at ICML 2026**.
+My research has been **published at top AI, NLP, and data-science venues**, including **ICML**, **ICLR**, **EMNLP**, **FAccT**, **IEEE BigData**, and **IEEE IS**, with a **Best Paper Award at IEEE IS 2024**. I have also published workshop papers at **ICML** and **EurIPS**, and served as a reviewer for **ACL SRW 2025** and the **AI4Math Workshop at ICML 2026**.
+
 
 > **I am actively seeking PhD/MS opportunities starting in Fall 2026.**
