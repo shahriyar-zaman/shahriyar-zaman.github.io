@@ -1,29 +1,4 @@
----
-
-layout: about
-title: about
-permalink: /
-subtitle: <a href='https://www.northsouth.edu/'>North South University</a>
-
-profile:
-align: right
-image: prof_pic.jpg
-image_circular: false
-more_info: > <p>Dhaka, Bangladesh</p> <p><a href="mailto:shahriyar.zaman01@gmail.com">[shahriyar.zaman01@gmail.com](mailto:shahriyar.zaman01@gmail.com)</a></p> <p>Open to PhD/MS opportunities · Fall 2026</p>
-
-selected_papers: true
-social: true
-
-announcements:
-enabled: true
-scrollable: true
-limit: 5
-
-latest_posts:
-enabled: false
-scrollable: true
-limit: 3
---------
+--- layout: about title: about permalink: / subtitle: <a href='https://www.northsouth.edu/'>North South University</a> profile: align: right image: prof_pic.jpg image_circular: false more_info: > <p>Dhaka, Bangladesh</p> <p><a href="mailto:shahriyar.zaman01@gmail.com">shahriyar.zaman01@gmail.com</a></p> <p>Open to PhD/MS opportunities · Fall 2026 🎓</p> selected_papers: true # includes a list of papers marked as "selected={true}" social: true # includes social icons at the bottom of the page announcements: enabled: true # includes a list of news items scrollable: true # adds a vertical scroll bar if there are more than 3 news items limit: 5 # leave blank to include all the news in the _news folder latest_posts: enabled: false scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items limit: 3 # leave blank to include all the blog posts ---
 
 Hi! I study when language and vision–language models are truly reasoning — and when they are exploiting shortcuts. My research builds trustworthy evaluations for reasoning, robustness, and cultural understanding, with a focus on multimodal reasoning, formal-symbolic reasoning, and Bengali NLP.
 
@@ -55,7 +30,7 @@ I build Bengali-focused evaluations and socially aware NLP systems for underrepr
 
 ## About
 
-I graduated **summa cum laude (top 2%)** in Computer Science & Engineering from **[North South University](https://www.northsouth.edu/)**. I am currently a **Lab Instructor** in the Department of Electrical & Computer Engineering at **[North South University](https://www.northsouth.edu/)** and a **Research Intern (Remote)** at the **[AIISC](https://aiisc.ai/)**, University of South Carolina, where I work with **[Dr. Amitava Das](https://scholar.google.com/citations?user=HYpfhaEAAAAJ&hl=en)** on adversarial robustness.
+I graduated **summa cum laude** in Computer Science & Engineering from **[North South University](https://www.northsouth.edu/)**. I am currently a **Lab Instructor** in the Department of Electrical & Computer Engineering at **[North South University](https://www.northsouth.edu/)** and a **Research Intern (Remote)** at the **[AIISC](https://aiisc.ai/)**, University of South Carolina, where I work with **[Dr. Amitava Das](https://scholar.google.com/citations?user=HYpfhaEAAAAJ&hl=en)** on adversarial robustness.
 
 I also collaborate with **[Dr. Md. Rizwan Parvez](https://scholar.google.com/citations?user=KhC8rtcAAAAJ&hl=en)** at the **Qatar Computing Research Institute (QCRI)** on geo-temporal and geo-spatial understanding of foundation models. Previously, I worked with **[Dr. Shafin Rahman](https://scholar.google.com/citations?user=Pe8C-SUAAAAJ&hl=en)** and **[Dr. Nabeel Mohammed](https://scholar.google.com/citations?user=w5djOYsAAAAJ&hl=en)** on vision–language reasoning at North South University.
 
