@@ -37,13 +37,12 @@ Hi! I study when language and vision–language models are truly reasoning — a
 *Work:* Beyond Build Validity [under review, ACL ARR 2026] · Can LLMs Design Computational Machines? [to be committed EMNLP 2026] · From Language Specifications to Executable Turing Machines [under review, ACL ARR 2026]
 
 **Safe and Robust Foundation Models.** I work on hallucination detection, adversarial robustness, efficient modeling, and clinical-text systems.
-*Work:* CAPSTONE [EMNLP 2025] *(cross-listed)* · SEISMOS [under review, NeurIPS 2026] · Clinical-text Pipeline [Best Paper, IEEE IS 2024]
+*Work:* CAPSTONE [EMNLP 2025] · SEISMOS [under review, NeurIPS 2026] · Clinical-text Pipeline [Best Paper Award, IEEE IS 2024]
 
 **Culturally Grounded NLP.** I build Bengali-focused evaluations and socially aware NLP systems for underrepresented settings.
 *Work:* BengaliMoralBench [FAccT 2026] · July Uprising crisis sentiment [under review, ACL ARR 2026] · PANCHINI [under review, Array]
 
 ### About
-
 I graduated **summa cum laude** in Computer Science & Engineering from **[North South University](https://www.northsouth.edu/)**. I am currently a **Lab Instructor** in the Department of Electrical & Computer Engineering at **[North South University](https://www.northsouth.edu/)** and a **Research Intern (Remote)** at the **[AIISC](https://aiisc.ai/)**, University of South Carolina, where I work with **[Dr. Amitava Das](https://scholar.google.com/citations?user=HYpfhaEAAAAJ&hl=en)** on adversarial robustness. I also collaborate with **[Dr. Md. Rizwan Parvez](https://scholar.google.com/citations?user=KhC8rtcAAAAJ&hl=en)** at the **Qatar Computing Research Institute (QCRI)** on geo-temporal and geo-spatial understanding of foundation models. Previously, I worked with **[Dr. Shafin Rahman](https://scholar.google.com/citations?user=Pe8C-SUAAAAJ&hl=en)** and **[Dr. Nabeel Mohammed](https://scholar.google.com/citations?user=w5djOYsAAAAJ&hl=en)** on vision–language reasoning at North South University.
 
 My research has been **published at top AI, NLP, and data-science venues**, including **ICML**, **ICLR**, **EMNLP**, **FAccT**, **IEEE BigData**, and **IEEE IS**, with a **Best Paper Award at IEEE IS 2024**. I have also published workshop papers at the **Human–AI Co-creativity**, **AI4Math**, and **Muslims in ML (MusIML)** workshops at **ICML**, and served as a reviewer for **ACL SRW 2025** and the **AI4Math Workshop at ICML 2026**.
