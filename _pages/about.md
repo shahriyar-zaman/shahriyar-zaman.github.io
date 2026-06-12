@@ -27,6 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 Hi! I study when language and vision–language models are truly reasoning — and when they are exploiting shortcuts. My research builds trustworthy evaluations for reasoning, robustness, and cultural understanding, with a focus on multimodal reasoning, formal-symbolic reasoning, and Bengali NLP.
+
 **Grounded Multimodal Reasoning.** I evaluate whether vision–language models understand space, time, and composition.
 *Work:* TimeSpot [ICML 2026] · SpatiaLab [ICLR 2026] · InvariantBench [under review, NeurIPS 2026] · CAPSTONE [EMNLP 2025]
 
