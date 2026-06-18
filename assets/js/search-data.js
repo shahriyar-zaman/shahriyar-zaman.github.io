@@ -478,7 +478,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-05-31-ai4math-workshop-icml-2026-reviewer/";
-            },},{id: "projects-project-1",
+            },},{id: "news-three-papers-are-accepted-to-icml-2026-workshops-two-at-the-ai-for-math-workshop-ai4math-and-one-at-muslims-in-ml-musiml-one-ai4math-paper-also-received-a-reviewer-level-best-paper-nomination-recommendation",
+          title: 'Three papers are accepted to ICML 2026 workshops: two at the AI for...',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
