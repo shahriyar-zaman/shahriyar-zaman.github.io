@@ -1423,3 +1423,25 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+
+/* Scrollable news box (like the boxed news feed) */
+.news {
+  max-height: 280px;        /* height of the box — adjust to taste */
+  overflow-y: auto;          /* shows scrollbar when content overflows */
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+}
+
+/* Optional: slimmer, themed scrollbar */
+.news::-webkit-scrollbar {
+  width: 8px;
+}
+.news::-webkit-scrollbar-thumb {
+  background-color: var(--global-divider-color);
+  border-radius: 4px;
+}
+.news::-webkit-scrollbar-thumb:hover {
+  background-color: var(--global-text-color-light);
+}
