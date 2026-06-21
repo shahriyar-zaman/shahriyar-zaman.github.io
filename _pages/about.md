@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.northsouth.edu/'>North South University</a>
+subtitle: "AI Researcher | NLP & Vision-Language Reasoning"
 
 profile:
   align: right
