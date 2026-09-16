@@ -1,0 +1,8 @@
+# Research code kept alongside the site but not published with it
+vlm-affective-aging/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
