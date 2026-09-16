@@ -226,18 +226,37 @@ pre {
 .nav__links a {
   display: block;
   position: relative;
-  padding: 0.5rem 0.48rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.085em;
+  padding: 0.55rem 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #3f4349;
+  color: #2f333a;
   white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+.nav__links a::after {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  right: 0.55rem;
+  bottom: 0.1rem;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.18s ease;
 }
 
 .nav__links a:hover {
-  color: var(--text);
+  color: var(--accent);
   text-decoration: none;
+}
+
+.nav__links a:hover::after {
+  transform: scaleX(1);
 }
 
 .nav__links a.active {
@@ -246,14 +265,13 @@ pre {
 }
 
 .nav__links a.active::after {
-  content: "";
-  position: absolute;
-  left: 0.6rem;
-  right: 0.6rem;
-  bottom: 0.15rem;
-  height: 2px;
-  border-radius: 2px;
-  background: var(--accent);
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav__links a::after {
+    transition: none;
+  }
 }
 
 .icon-btn {
@@ -321,6 +339,7 @@ pre {
     font-size: 0.95rem;
   }
 
+  .nav__links a::after,
   .nav__links a.active::after {
     display: none;
   }
