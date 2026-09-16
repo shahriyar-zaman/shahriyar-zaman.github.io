@@ -171,7 +171,6 @@ pre {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.9rem 1.5rem;
-  max-width: 1240px;
   padding-top: 2.25rem;
   padding-bottom: 1.1rem;
 }
@@ -185,7 +184,7 @@ pre {
 
 .masthead__name {
   font-family: var(--font-serif);
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   font-weight: 500;
   letter-spacing: -0.015em;
   line-height: 1.1;
@@ -203,7 +202,7 @@ pre {
 
 .masthead__tagline {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--muted);
 }
 
@@ -226,8 +225,8 @@ pre {
 .nav__links a {
   display: block;
   position: relative;
-  padding: 0.55rem 0.55rem;
-  font-size: 1.2rem;
+  padding: 0.5rem 0.55rem;
+  font-size: 1.02rem;
   font-weight: 600;
   letter-spacing: 0;
   text-transform: none;
@@ -239,8 +238,8 @@ pre {
 .nav__links a::after {
   content: "";
   position: absolute;
-  left: 0.55rem;
-  right: 0.55rem;
+  left: 0.6rem;
+  right: 0.6rem;
   bottom: 0.1rem;
   height: 2px;
   border-radius: 2px;
@@ -298,7 +297,7 @@ pre {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
   .masthead__inner {
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -307,7 +306,7 @@ pre {
   }
 
   .masthead__name {
-    font-size: 1.55rem;
+    font-size: 1.8rem;
   }
 
   .nav-toggle {
@@ -336,7 +335,7 @@ pre {
   .nav__links a {
     padding: 0.8rem 0.25rem;
     border-bottom: 1px solid var(--divider);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .nav__links a::after,
