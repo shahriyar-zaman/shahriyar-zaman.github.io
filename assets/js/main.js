@@ -145,6 +145,57 @@
     });
   }
 
+  /* ------------------------------------------- home news: scroll viewport */
+  document.querySelectorAll("[data-news-scroll]").forEach(function (box) {
+    var list = box.querySelector(".news-list");
+    var items = box.querySelectorAll(".news-item");
+    var visible = parseInt(box.getAttribute("data-news-visible"), 10) || 5;
+    var hint = box.parentNode.querySelector("[data-news-hint]");
+
+    if (!list || items.length <= visible) {
+      box.classList.add("is-static");
+      box.removeAttribute("tabindex");
+      box.removeAttribute("role");
+      box.removeAttribute("aria-label");
+      return;
+    }
+
+    if (hint) {
+      var earlier = items.length - visible;
+      hint.innerHTML =
+        '<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>' +
+        "<span>Scroll for " + earlier + " earlier update" + (earlier === 1 ? "" : "s") + "</span>";
+      hint.hidden = false;
+    }
+
+    // Height of the first N entries, plus a faded peek of the next one so it's
+    // clear the list continues.
+    var fit = function () {
+      var peek = parseFloat(getComputedStyle(box).fontSize) * 2.5;
+      var height = items[visible].offsetTop - items[0].offsetTop + peek;
+      box.style.maxHeight = Math.ceil(height) + "px";
+      sync();
+    };
+
+    var sync = function () {
+      var end = box.scrollHeight - box.clientHeight;
+      var atEnd = box.scrollTop >= end - 2;
+      box.classList.toggle("is-scrollable", end > 2);
+      box.classList.toggle("is-scrolled", box.scrollTop > 2);
+      box.classList.toggle("is-at-end", atEnd);
+      if (hint) hint.classList.toggle("is-done", atEnd);
+    };
+
+    box.addEventListener("scroll", sync, { passive: true });
+    if ("ResizeObserver" in window) {
+      new ResizeObserver(fit).observe(list);
+    } else {
+      window.addEventListener("resize", fit);
+    }
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+    fit();
+  });
+
   /* --------------------------------------------------------- back to top */
   var toTop = document.querySelector(".to-top");
   if (toTop) {
