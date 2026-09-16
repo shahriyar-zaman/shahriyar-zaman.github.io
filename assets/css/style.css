@@ -1706,6 +1706,49 @@ blockquote {
   color: var(--accent);
 }
 
+.xp__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.xp__link .icon {
+  font-size: 0.85em;
+}
+
+/* Photo row inside a timeline entry. Each figure grows in proportion to its
+   image's aspect ratio (--ar, set inline), so every photo renders at the same
+   height without cropping. Stacks on narrow screens. */
+.xp__gallery {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+}
+
+.xp__photo {
+  flex: var(--ar, 1) 1 0;
+  min-width: 0;
+  margin: 0;
+}
+
+.xp__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--divider);
+}
+
+.xp__photo figcaption {
+  margin-top: 0.45rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
 .xp__tags {
   display: flex;
   flex-wrap: wrap;
@@ -1857,6 +1900,142 @@ blockquote {
   margin-top: auto;
   font-size: 0.8rem;
   font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   Misc facts page
+   -------------------------------------------------------------------------- */
+
+.facts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.fact {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.6rem 1.75rem;
+  border: 1px solid var(--divider);
+  border-radius: 16px;
+  background: var(--card);
+  scroll-margin-top: 1.5rem;
+}
+
+.fact__figure {
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 14px;
+  background: var(--tint);
+  color: var(--accent);
+  font-family: var(--font-serif);
+  font-size: 2.75rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.fact__figure--pi {
+  font-style: italic;
+  padding-bottom: 0.15em;
+}
+
+.fact__title {
+  font-size: 1.35rem;
+  margin: 0.2rem 0 0.6rem;
+}
+
+.fact__body p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0 0 0.75rem;
+}
+
+.fact__body p:last-child {
+  margin-bottom: 0;
+}
+
+.fact__aside {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.fact__digits {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  letter-spacing: 0.03em;
+  color: var(--text);
+}
+
+.fact__digits span {
+  display: inline-block;
+}
+
+/* A single line of digits that trails off, as if it could go on forever. */
+.fact__digits--teaser {
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--accent);
+  -webkit-mask-image: linear-gradient(to right, #000 55%, transparent);
+  mask-image: linear-gradient(to right, #000 55%, transparent);
+}
+
+.fact__more {
+  margin-top: 0.25rem;
+}
+
+.fact__more summary {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  list-style: none;
+}
+
+.fact__more summary::-webkit-details-marker {
+  display: none;
+}
+
+.fact__more summary::after {
+  content: " ↓";
+}
+
+.fact__more[open] summary::after {
+  content: " ↑";
+}
+
+.fact__more summary:hover {
+  text-decoration: underline;
+}
+
+.fact__more[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+.fact__more .fact__digits {
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: var(--code-bg);
+  line-height: 1.9;
+  word-spacing: 0.35em;
+}
+
+@media (max-width: 575px) {
+  .fact {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.9rem;
+    padding: 1.35rem 1.25rem;
+  }
+
+  .fact__figure {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2.1rem;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -2298,6 +2477,14 @@ blockquote {
 }
 
 @media (max-width: 575px) {
+  .xp__gallery {
+    flex-direction: column;
+  }
+
+  .xp__photo {
+    flex: none;
+  }
+
   .snapshot__grid {
     grid-template-columns: 1fr;
   }
