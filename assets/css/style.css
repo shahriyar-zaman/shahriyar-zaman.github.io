@@ -171,8 +171,9 @@ pre {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.9rem 1.5rem;
-  padding-top: 2.25rem;
-  padding-bottom: 1.1rem;
+  max-width: 1240px;
+  padding-top: 2.6rem;
+  padding-bottom: 1.3rem;
 }
 
 .masthead__brand {
@@ -184,7 +185,7 @@ pre {
 
 .masthead__name {
   font-family: var(--font-serif);
-  font-size: 1.9rem;
+  font-size: 2.15rem;
   font-weight: 500;
   letter-spacing: -0.015em;
   line-height: 1.1;
@@ -202,7 +203,7 @@ pre {
 
 .masthead__tagline {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--muted);
 }
 
@@ -225,8 +226,8 @@ pre {
 .nav__links a {
   display: block;
   position: relative;
-  padding: 0.45rem 0.38rem;
-  font-size: 0.74rem;
+  padding: 0.5rem 0.48rem;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.085em;
   text-transform: uppercase;
@@ -279,7 +280,7 @@ pre {
   display: none;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1200px) {
   .masthead__inner {
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -288,7 +289,7 @@ pre {
   }
 
   .masthead__name {
-    font-size: 1.55rem;
+    font-size: 1.7rem;
   }
 
   .nav-toggle {
@@ -317,7 +318,7 @@ pre {
   .nav__links a {
     padding: 0.8rem 0.25rem;
     border-bottom: 1px solid var(--divider);
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
 
   .nav__links a.active::after {
@@ -1622,6 +1623,112 @@ blockquote {
 }
 
 .xp__bullets li::marker {
+  color: var(--accent);
+}
+
+.gallery__intro {
+  max-width: 46rem;
+  color: var(--text);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.gallery__item {
+  margin: 0;
+  min-width: 0;
+}
+
+.gallery__item--wide {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery__item a {
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--divider);
+}
+
+.gallery__item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery__item--wide img {
+  aspect-ratio: 1 / 1;
+}
+
+.gallery__item a:hover img {
+  transform: scale(1.03);
+}
+
+.gallery__item figcaption {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin-top: 0.45rem;
+}
+
+@media (max-width: 520px) {
+  .gallery__item--wide {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.talk-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.talk-video {
+  margin: 0;
+  min-width: 0;
+}
+
+.talk-video__frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--divider);
+  background: #000;
+}
+
+.talk-video__frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.talk-video figcaption {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+.talk-video figcaption a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.talk-video figcaption a:hover {
   color: var(--accent);
 }
 
