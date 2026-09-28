@@ -1781,19 +1781,6 @@ blockquote {
   color: var(--accent);
 }
 
-.xp__sub {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin: 1rem 0 0;
-}
-
-.xp__sub + .xp__bullets {
-  margin-top: 0.35rem;
-}
-
 .xp__bullets {
   margin: 0.7rem 0 0;
   padding-left: 1.15rem;
