@@ -196,6 +196,55 @@
     fit();
   });
 
+  /* ------------------------------------------ selected publications filter */
+  var spubBar = document.querySelector("[data-spub-filter]");
+  if (spubBar) {
+    var spubs = Array.prototype.slice.call(document.querySelectorAll(".spub-list .spub"));
+    var spubBtns = Array.prototype.slice.call(spubBar.querySelectorAll("button[data-filter]"));
+    var spubMatch = function (li, f) {
+      if (f === "all") return true;
+      if (f === "lead") return li.hasAttribute("data-lead");
+      return li.getAttribute("data-topic") === f;
+    };
+    spubBtns.forEach(function (b) {
+      var n = b.querySelector(".spub-filter__n");
+      if (n) {
+        n.textContent = spubs.filter(function (li) {
+          return spubMatch(li, b.getAttribute("data-filter"));
+        }).length;
+      }
+    });
+    var spubApply = function (f, animate) {
+      var shown = [];
+      spubs.forEach(function (li) {
+        var on = spubMatch(li, f);
+        li.hidden = !on;
+        li.classList.remove("is-wide", "is-entering");
+        if (on) shown.push(li);
+      });
+      // a card left alone on the last row spans the full width
+      var regular = shown.filter(function (li) {
+        return !li.classList.contains("spub--featured");
+      });
+      if (regular.length % 2 === 1) regular[regular.length - 1].classList.add("is-wide");
+      if (animate) {
+        shown.forEach(function (li) {
+          void li.offsetWidth;
+          li.classList.add("is-entering");
+        });
+      }
+      spubBtns.forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.getAttribute("data-filter") === f));
+      });
+    };
+    spubBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        spubApply(b.getAttribute("data-filter"), true);
+      });
+    });
+    spubApply("all", false);
+  }
+
   /* --------------------------------------------------------- back to top */
   var toTop = document.querySelector(".to-top");
   if (toTop) {

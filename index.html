@@ -161,105 +161,97 @@
         <a class="section__link" href="publications.html">All publications <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
 
-      <div class="snapshot" role="group" aria-label="Publication snapshot">
-        <div class="snapshot__head">
-          <span class="eyebrow">Publication snapshot</span>
-          <span class="snapshot__date">As of November 2026 · 16 peer-reviewed papers</span>
-        </div>
-        <div class="snapshot__grid">
-          <div class="snapshot__cell">
-            <div class="snapshot__num">13</div>
-            <div class="snapshot__label">Conference papers</div>
-            <div class="snapshot__sub">9 as first or co-first author</div>
-            <div class="snapshot__tags"><span>NeurIPS 2026</span><span>ICML 2026</span><span>ICLR 2026</span><span>EACL 2027</span><span>EMNLP 2026 ×2</span><span>ACM FAccT 2026</span><span>AACL-IJCNLP 2026 ×3</span><span>EMNLP 2025</span><span>IEEE BigData 2024</span><span>IEEE IS 2024 · Best Paper</span></div>
-          </div>
-          <div class="snapshot__cell">
-            <div class="snapshot__num">1</div>
-            <div class="snapshot__label">Journal article</div>
-            <div class="snapshot__sub">Springer Nature</div>
-            <div class="snapshot__tags"><span>SN Computer Science 2025</span></div>
-          </div>
-          <div class="snapshot__cell">
-            <div class="snapshot__num">2</div>
-            <div class="snapshot__label">Workshop papers</div>
-            <div class="snapshot__sub">Human-AI Co-Creativity, SLM evaluation</div>
-            <div class="snapshot__tags"><span>ICML 2026</span><span>NeurIPS 2026</span></div>
-          </div>
-          <div class="snapshot__cell">
-            <div class="snapshot__num">3</div>
-            <div class="snapshot__label">Under review</div>
-            <div class="snapshot__sub">Conference and journal</div>
-            <div class="snapshot__tags"><span>ICLR 2027</span><span>Array (Elsevier)</span></div>
-          </div>
-        </div>
+      <div class="spub-filter" role="group" aria-label="Filter selected publications" data-spub-filter>
+        <button type="button" data-filter="all" aria-pressed="true">All <span class="spub-filter__n">8</span></button>
+        <button type="button" data-filter="lead" aria-pressed="false">First / co-first author <span class="spub-filter__n">6</span></button>
+        <button type="button" data-filter="formal" aria-pressed="false">Formal reasoning <span class="spub-filter__n">3</span></button>
+        <button type="button" data-filter="vlm" aria-pressed="false">Vision-language <span class="spub-filter__n">3</span></button>
+        <button type="button" data-filter="nlp" aria-pressed="false">Trustworthy AI &amp; NLP <span class="spub-filter__n">2</span></button>
       </div>
 
       <ul class="spub-list">
-        <li class="spub">
-          <span class="spub__badge">Findings of EMNLP 2026</span>
-          <div>
-            <h3 class="spub__title"><a href="publications.html#ridoy2026tmeval">From Language Specifications to Executable Turing Machines: Evaluating LLMs as Computational Machine Designers</a></h3>
-            <p class="spub__authors"><span class="me">S. Z. Ridoy</span>, S. M. M. Hasan, A. T. Wasi, K. Tshering, K. A. Tonmoy, M. M. Khan</p>
-            <p class="spub__summary">Evaluates whether LLMs can translate natural-language specifications into executable Turing machines, judged by behavioral correctness on held-out inputs rather than surface plausibility.</p>
-            <p class="spub__meta"><span class="spub__venue">Findings of EMNLP 2026</span><span class="spub__sep">·</span><span>First author</span><span class="spub__sep">·</span><span class="topic topic--formal">Formal Reasoning</span><span class="topic topic--formal">LLM Evaluation</span></p>
+        <li class="spub spub--featured" data-topic="formal" data-lead>
+          <div class="spub__media" aria-hidden="true"><img src="assets/img/publication_preview/cfg_methodology.png" alt="" loading="lazy"><span class="spub__venue-tag">Findings of EACL 2027</span><span class="spub__flag">New</span></div>
+          <div class="spub__body">
+            <p class="spub__role spub__role--lead">Co-first author</p>
+            <h3 class="spub__title"><a href="publications.html#ridoy2026cfgbench">Beyond Build Validity: Evaluating Behavioral Correctness in LLM-Generated Context-Free Grammars</a></h3>
+            <p class="spub__authors">S. M. M. Hasan<sup>*</sup>, <span class="me">S. Z. Ridoy<sup>*</sup></span>, S. M. Mahmud, N. J. Lina, M. M. Khan</p>
+            <p class="spub__summary">Evaluates LLM-generated context-free grammars by what they do, not whether they compile: a grammar counts as correct only if it accepts and rejects the right strings. Many grammars that build cleanly still fail this behavioral test.</p>
+            <div class="spub__foot"><span class="spub__topics"><span class="topic topic--formal">Formal Reasoning</span><span class="topic topic--formal">LLM Evaluation</span></span></div>
           </div>
         </li>
-        <li class="spub">
-          <span class="spub__badge">ICML 2026</span>
-          <div>
+        <li class="spub" data-topic="vlm" data-lead>
+          <div class="spub__media" aria-hidden="true"><img src="assets/img/publication_preview/timespot_first_fig.png" alt="" loading="lazy"><span class="spub__venue-tag">ICML 2026</span></div>
+          <div class="spub__body">
+            <p class="spub__role spub__role--lead">Co-first author · Main track</p>
             <h3 class="spub__title"><a href="https://arxiv.org/abs/2603.06687" target="_blank" rel="noopener">TimeSpot: Benchmarking Geo-Temporal Understanding in Vision–Language Models in Real-World Settings</a></h3>
             <p class="spub__authors">A. T. Wasi<sup>*</sup>, <span class="me">S. Z. Ridoy<sup>*</sup></span>, K. A. Tonmoy, K. Tshering, S. M. M. Hasan, W. Faisal, T. Mohiuddin, M. R. Parvez</p>
             <p class="spub__summary">A benchmark of 1,455 real-world images from 80 countries that asks vision-language models to infer season, time of day, climate zone, and coordinates from pixels alone. State-of-the-art VLMs perform consistently poorly across tasks.</p>
-            <p class="spub__meta"><span class="spub__venue">ICML 2026</span><span class="spub__sep">·</span><span>Main track, co-first author</span><span class="spub__sep">·</span><a href="https://arxiv.org/abs/2603.06687" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2603.06687" target="_blank" rel="noopener">PDF</a><span class="spub__sep">·</span><span class="topic topic--vlm">Vision-Language</span><span class="topic topic--vlm">Benchmark</span></p>
+            <div class="spub__foot"><span class="spub__topics"><span class="topic topic--vlm">Vision-Language</span><span class="topic topic--vlm">Benchmark</span></span><span class="spub__links"><a href="https://arxiv.org/abs/2603.06687" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2603.06687" target="_blank" rel="noopener">PDF</a></span></div>
           </div>
         </li>
-        <li class="spub">
-          <span class="spub__badge">NeurIPS 2026</span>
-          <div>
+        <li class="spub" data-topic="nlp">
+          <div class="spub__media spub__media--art" aria-hidden="true"><span class="spub__art">SEISMOS<small>Boundary detection for chunking</small></span><span class="spub__venue-tag">NeurIPS 2026</span></div>
+          <div class="spub__body">
+            <p class="spub__role">Co-author · Main conference (poster)</p>
             <h3 class="spub__title"><a href="publications.html#saad2026seismos">SEISMOS: A Statistical Signal Detection Framework for Semantic Chunking</a></h3>
             <p class="spub__authors">I. M. Saad, M. Islam, <span class="me">S. Z. Ridoy</span>, M. M. Ahsan, A. T. Wasi</p>
-            <p class="spub__summary">Reframes semantic chunking as statistical boundary detection over sentence-embedding similarity signals. A single LLM-free detector improves dense retrieval over fixed-length, recursive, and production chunkers on five BEIR benchmarks and transfers to TREC-COVID without retuning.</p>
-            <p class="spub__meta"><span class="spub__venue">NeurIPS 2026</span><span class="spub__sep">·</span><span>Main conference (poster)</span><span class="spub__sep">·</span><span class="topic topic--nlp">Retrieval</span><span class="topic topic--nlp">Semantic Chunking</span></p>
+            <p class="spub__summary">Reframes semantic chunking as statistical boundary detection over sentence-embedding similarity signals. A single LLM-free detector improves dense retrieval over fixed-length, recursive, and production chunkers on five BEIR benchmarks.</p>
+            <div class="spub__foot"><span class="spub__topics"><span class="topic topic--nlp">Retrieval</span><span class="topic topic--nlp">Semantic Chunking</span></span></div>
           </div>
         </li>
-        <li class="spub">
-          <span class="spub__badge">EMNLP 2025 Industry</span>
-          <div>
-            <h3 class="spub__title"><a href="https://aclanthology.org/2025.emnlp-industry.190.pdf" target="_blank" rel="noopener">CAPSTONE: Composable Attribute-Prompted Scene Translation for Zero-Shot Vision–Language Reasoning</a></h3>
-            <p class="spub__authors">M. I. Hossain<sup>*</sup>, <span class="me">S. Z. Ridoy<sup>*</sup></span>, M. Farazi, N. Mohammed, S. Rahman</p>
-            <p class="spub__summary">Turns off-the-shelf vision model outputs into structured prompts for a frozen LLM, enabling zero-shot visual reasoning with no multimodal training. A 7B pipeline outperforms fully trained VLMs on POPE.</p>
-            <p class="spub__meta"><span class="spub__venue">EMNLP 2025 Industry Track</span><span class="spub__sep">·</span><span>Co-first author</span><span class="spub__sep">·</span><a href="https://aclanthology.org/2025.emnlp-industry.190.pdf" target="_blank" rel="noopener">PDF</a><a href="https://github.com/ismail31416/CAPSTONE" target="_blank" rel="noopener">Code</a><span class="spub__sep">·</span><span class="topic topic--vlm">Vision-Language</span><span class="topic">Efficient Inference</span></p>
+        <li class="spub" data-topic="formal" data-lead>
+          <div class="spub__media spub__media--art" aria-hidden="true"><span class="spub__art">Turing Machines<small>From specification to execution</small></span><span class="spub__venue-tag">Findings of EMNLP 2026</span></div>
+          <div class="spub__body">
+            <p class="spub__role spub__role--lead">First author</p>
+            <h3 class="spub__title"><a href="publications.html#ridoy2026tmeval">From Language Specifications to Executable Turing Machines: Evaluating LLMs as Computational Machine Designers</a></h3>
+            <p class="spub__authors"><span class="me">S. Z. Ridoy</span>, S. M. M. Hasan, A. T. Wasi, K. Tshering, K. A. Tonmoy, M. M. Khan</p>
+            <p class="spub__summary">Evaluates whether LLMs can translate natural-language specifications into executable Turing machines, judged by behavioral correctness on held-out inputs rather than surface plausibility.</p>
+            <div class="spub__foot"><span class="spub__topics"><span class="topic topic--formal">Formal Reasoning</span><span class="topic topic--formal">LLM Evaluation</span></span></div>
           </div>
         </li>
-        <li class="spub">
-          <span class="spub__badge">Findings of EMNLP 2026</span>
-          <div>
-            <h3 class="spub__title"><a href="publications.html#mahmud2026pda">Can LLMs Design Computational Machines? Pushdown Automaton Synthesis as a Test of Structured Computational Reasoning</a></h3>
-            <p class="spub__authors">S. M. Mahmud<sup>*</sup>, N. J. Lina<sup>*</sup>, <span class="me">S. Z. Ridoy</span>, S. M. M. Hasan, M. M. Khan</p>
-            <p class="spub__summary">Introduces pushdown automaton synthesis as a controlled test of structured symbolic reasoning, verifying generated automata through structural buildability checks and execution against labeled context-free language test cases. State-of-the-art LLMs struggle to construct reliably executable PDAs.</p>
-            <p class="spub__meta"><span class="spub__venue">Findings of EMNLP 2026</span><span class="spub__sep">·</span><span class="topic topic--formal">Formal Reasoning</span><span class="topic topic--formal">LLM Evaluation</span></p>
-          </div>
-        </li>
-        <li class="spub">
-          <span class="spub__badge">ICLR 2026</span>
-          <div>
-            <h3 class="spub__title"><a href="https://arxiv.org/abs/2602.03916" target="_blank" rel="noopener">SpatiaLab: Can Vision–Language Models Perform Spatial Reasoning in the Wild?</a></h3>
-            <p class="spub__authors">A. T. Wasi, W. Faisal, A. Rahman, M. A. Anik, M. Shahriar, M. M. Topu, S. T. Meem, R. N. Priti, S. A. Mitu, M. I. Hoque, <span class="me">S. Z. Ridoy</span>, M. E. Ali, M. Hawsaly, M. Raza, M. R. Parvez</p>
-            <p class="spub__summary">1,400 visual question-answer pairs across 30 spatial task types in unconstrained real-world scenes. The best model reaches 54.9% accuracy in the multiple-choice setting against 87.6% for humans.</p>
-            <p class="spub__meta"><span class="spub__venue">ICLR 2026</span><span class="spub__sep">·</span><a href="https://arxiv.org/abs/2602.03916" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2602.03916" target="_blank" rel="noopener">PDF</a><span class="spub__sep">·</span><span class="topic topic--vlm">Vision-Language</span><span class="topic topic--vlm">Spatial Reasoning</span></p>
-          </div>
-        </li>
-        <li class="spub">
-          <span class="spub__badge">ACM FAccT 2026</span>
-          <div>
+        <li class="spub" data-topic="nlp" data-lead>
+          <div class="spub__media" aria-hidden="true"><img src="assets/img/publication_preview/bengali_moralbench.png" alt="" loading="lazy"><span class="spub__venue-tag">ACM FAccT 2026</span></div>
+          <div class="spub__body">
+            <p class="spub__role spub__role--lead">Co-first author</p>
             <h3 class="spub__title"><a href="https://arxiv.org/abs/2511.03180" target="_blank" rel="noopener">BengaliMoralBench: A Benchmark for Auditing Ethical Reasoning in Large Language Models in Bengali Language and Culture</a></h3>
             <p class="spub__authors"><span class="me">S. Z. Ridoy<sup>*</sup></span>, A. T. Wasi<sup>*</sup>, K. A. Tonmoy, T. H. Rafi, D.-K. Chae</p>
             <p class="spub__summary">The first large-scale ethics benchmark for the Bengali language and culture: five moral domains and 50 subtopics, annotated by native-speaker consensus through virtue, commonsense, and justice lenses.</p>
-            <p class="spub__meta"><span class="spub__venue">ACM FAccT 2026</span><span class="spub__sep">·</span><span>Co-first author</span><span class="spub__sep">·</span><a href="https://arxiv.org/abs/2511.03180" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2511.03180" target="_blank" rel="noopener">PDF</a><span class="spub__sep">·</span><span class="topic">Trustworthy AI</span><span class="topic topic--nlp">Low-Resource NLP</span></p>
+            <div class="spub__foot"><span class="spub__topics"><span class="topic">Trustworthy AI</span><span class="topic topic--nlp">Low-Resource NLP</span></span><span class="spub__links"><a href="https://arxiv.org/abs/2511.03180" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2511.03180" target="_blank" rel="noopener">PDF</a></span></div>
+          </div>
+        </li>
+        <li class="spub" data-topic="vlm">
+          <div class="spub__media" aria-hidden="true"><img src="assets/img/publication_preview/SpatiaLab.png" alt="" loading="lazy"><span class="spub__venue-tag">ICLR 2026</span></div>
+          <div class="spub__body">
+            <p class="spub__role">Co-author</p>
+            <h3 class="spub__title"><a href="https://arxiv.org/abs/2602.03916" target="_blank" rel="noopener">SpatiaLab: Can Vision–Language Models Perform Spatial Reasoning in the Wild?</a></h3>
+            <p class="spub__authors">A. T. Wasi, W. Faisal, A. Rahman, M. A. Anik, … <span class="me">S. Z. Ridoy</span>, … M. R. Parvez <span class="spub__n">(15 authors)</span></p>
+            <p class="spub__summary">1,400 visual question-answer pairs across 30 spatial task types in unconstrained real-world scenes. The best model reaches 54.9% accuracy in the multiple-choice setting against 87.6% for humans.</p>
+            <div class="spub__foot"><span class="spub__topics"><span class="topic topic--vlm">Vision-Language</span><span class="topic topic--vlm">Spatial Reasoning</span></span><span class="spub__links"><a href="https://arxiv.org/abs/2602.03916" target="_blank" rel="noopener">arXiv</a><a href="https://arxiv.org/pdf/2602.03916" target="_blank" rel="noopener">PDF</a></span></div>
+          </div>
+        </li>
+        <li class="spub" data-topic="formal">
+          <div class="spub__media" aria-hidden="true"><img src="assets/img/publication_preview/pda_methodology_fig.png" alt="" loading="lazy"><span class="spub__venue-tag">Findings of EMNLP 2026</span></div>
+          <div class="spub__body">
+            <p class="spub__role">Co-author</p>
+            <h3 class="spub__title"><a href="publications.html#mahmud2026pda">Can LLMs Design Computational Machines? Pushdown Automaton Synthesis as a Test of Structured Computational Reasoning</a></h3>
+            <p class="spub__authors">S. M. Mahmud<sup>*</sup>, N. J. Lina<sup>*</sup>, <span class="me">S. Z. Ridoy</span>, S. M. M. Hasan, M. M. Khan</p>
+            <p class="spub__summary">Introduces pushdown automaton synthesis as a controlled test of structured symbolic reasoning, verifying generated automata by buildability checks and execution on labeled context-free test cases. State-of-the-art LLMs struggle to build reliably executable PDAs.</p>
+            <div class="spub__foot"><span class="spub__topics"><span class="topic topic--formal">Formal Reasoning</span><span class="topic topic--formal">LLM Evaluation</span></span></div>
+          </div>
+        </li>
+        <li class="spub is-wide" data-topic="vlm" data-lead>
+          <div class="spub__media" aria-hidden="true"><img src="assets/img/publication_preview/capstone.png" alt="" loading="lazy"><span class="spub__venue-tag">EMNLP 2025 Industry</span></div>
+          <div class="spub__body">
+            <p class="spub__role spub__role--lead">Co-first author</p>
+            <h3 class="spub__title"><a href="https://aclanthology.org/2025.emnlp-industry.190.pdf" target="_blank" rel="noopener">CAPSTONE: Composable Attribute-Prompted Scene Translation for Zero-Shot Vision–Language Reasoning</a></h3>
+            <p class="spub__authors">M. I. Hossain<sup>*</sup>, <span class="me">S. Z. Ridoy<sup>*</sup></span>, M. Farazi, N. Mohammed, S. Rahman</p>
+            <p class="spub__summary">Turns off-the-shelf vision model outputs into structured prompts for a frozen LLM, enabling zero-shot visual reasoning with no multimodal training. A 7B pipeline outperforms fully trained VLMs on POPE.</p>
+            <div class="spub__foot"><span class="spub__topics"><span class="topic topic--vlm">Vision-Language</span><span class="topic">Efficient Inference</span></span><span class="spub__links"><a href="https://aclanthology.org/2025.emnlp-industry.190.pdf" target="_blank" rel="noopener">PDF</a><a href="https://github.com/ismail31416/CAPSTONE" target="_blank" rel="noopener">Code</a></span></div>
           </div>
         </li>
       </ul>
-      <p class="pub-note"><sup>*</sup> denotes equal contribution. <a href="publications.html">See all 17 papers with abstracts and BibTeX</a>.</p>
+      <p class="pub-note"><sup>*</sup> denotes equal contribution. <a href="publications.html">See all 20 papers with abstracts and BibTeX</a>.</p>
     </section>
 
     <!-- Research experience -->
