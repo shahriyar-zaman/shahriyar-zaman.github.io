@@ -39,41 +39,8 @@
   color-scheme: light;
 }
 
-/* Dark theme: follows the OS setting unless the visitor picks a theme with
-   the masthead toggle (stored as data-theme on <html>). */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #111214;
-    --card: #18191c;
-    --text: #e6e4e0;
-    --muted: #a0a4ab;
-    --accent: #e8909a;
-    --accent-rgb: 232, 144, 154;
-    --accent-hover: #f3b0b8;
-    --on-accent: #1d0d11;
-    --tint: rgba(232, 144, 154, 0.12);
-    --divider: rgba(255, 255, 255, 0.1);
-    --divider-strong: rgba(255, 255, 255, 0.22);
-    --shadow: rgba(0, 0, 0, 0.6);
-    --code-bg: rgba(232, 144, 154, 0.08);
-    --nav-text: #d6d4d0;
-    --surface-2: #1b1c20;
-    --badge-muted: #4a5360;
-    --badge-review: #5b6068;
-    --on-badge: #f2f2f2;
-    --img-bg: #ffffff;
-    --topic-vlm-bg: rgba(120, 165, 225, 0.15);
-    --topic-vlm: #a7c5ec;
-    --topic-formal-bg: rgba(95, 195, 145, 0.14);
-    --topic-formal: #96d6b4;
-    --topic-nlp-bg: rgba(225, 175, 85, 0.15);
-    --topic-nlp: #e5c385;
-    --topic-award-bg: rgba(235, 195, 70, 0.16);
-    --topic-award: #efd68a;
-    color-scheme: dark;
-}
-}
-
+/* Dark theme: light is the default; the masthead toggle switches to dark
+   (stored as data-theme on <html>). */
 :root[data-theme="dark"] {
   --bg: #111214;
   --card: #18191c;
@@ -389,26 +356,12 @@ pre {
   display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .icon--sun {
-    display: inline-block;
-  }
-
-  :root:not([data-theme="light"]) .theme-toggle .icon--moon {
-    display: none;
-  }
-}
 
 /* Figures are drawn on white; soften them slightly on the dark theme. */
 :root[data-theme="dark"] :is(.pub__preview, .project__img, .overview-figure img) {
   filter: brightness(0.92);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) :is(.pub__preview, .project__img, .overview-figure img) {
-    filter: brightness(0.92);
-  }
-}
 
 @media (max-width: 1080px) {
   .masthead__inner {

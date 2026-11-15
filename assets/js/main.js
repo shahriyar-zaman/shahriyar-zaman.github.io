@@ -20,11 +20,8 @@
 
   /* ---------------------------------------------------------- theme toggle */
   var root = document.documentElement;
-  var darkQuery = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
   var currentTheme = function () {
-    var set = root.getAttribute("data-theme");
-    if (set === "dark" || set === "light") return set;
-    return darkQuery && darkQuery.matches ? "dark" : "light";
+    return root.getAttribute("data-theme") === "dark" ? "dark" : "light";
   };
   var themeButtons = Array.prototype.slice.call(document.querySelectorAll("[data-theme-toggle]"));
   var syncThemeButtons = function () {
@@ -45,10 +42,6 @@
       syncThemeButtons();
     });
   });
-  if (darkQuery) {
-    if (darkQuery.addEventListener) darkQuery.addEventListener("change", syncThemeButtons);
-    else if (darkQuery.addListener) darkQuery.addListener(syncThemeButtons);
-  }
   syncThemeButtons();
 
   /* ------------------------------------------- on-this-page rail (home) */
