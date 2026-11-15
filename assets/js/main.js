@@ -18,6 +18,39 @@
     });
   }
 
+  /* ---------------------------------------------------------- theme toggle */
+  var root = document.documentElement;
+  var darkQuery = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  var currentTheme = function () {
+    var set = root.getAttribute("data-theme");
+    if (set === "dark" || set === "light") return set;
+    return darkQuery && darkQuery.matches ? "dark" : "light";
+  };
+  var themeButtons = Array.prototype.slice.call(document.querySelectorAll("[data-theme-toggle]"));
+  var syncThemeButtons = function () {
+    var next = currentTheme() === "dark" ? "light" : "dark";
+    var label = "Switch to " + next + " theme";
+    themeButtons.forEach(function (btn) {
+      btn.setAttribute("aria-label", label);
+      btn.setAttribute("title", label);
+    });
+  };
+  themeButtons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var next = currentTheme() === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch (e) {}
+      syncThemeButtons();
+    });
+  });
+  if (darkQuery) {
+    if (darkQuery.addEventListener) darkQuery.addEventListener("change", syncThemeButtons);
+    else if (darkQuery.addListener) darkQuery.addListener(syncThemeButtons);
+  }
+  syncThemeButtons();
+
   /* ------------------------------------------- on-this-page rail (home) */
   var tocHost = document.querySelector("[data-toc]");
   if (tocHost) {
@@ -98,26 +131,173 @@
     });
   });
 
-  /* ---------------------------------------------------- publication filter */
-  var filter = document.querySelector(".pub-filter");
-  if (filter) {
-    var pubs = Array.prototype.slice.call(document.querySelectorAll(".pub"));
-    var groups = Array.prototype.slice.call(document.querySelectorAll("[data-year-group]"));
-    var empty = document.querySelector(".pub-empty");
-    filter.addEventListener("input", function () {
-      var q = filter.value.trim().toLowerCase();
+  /* ------------------------------------------- publications: group + filter */
+  var pubHost = document.querySelector("[data-pub-groups]");
+  if (pubHost) {
+    var TYPES = [
+      { key: "conference", label: "Conference Papers" },
+      { key: "journal", label: "Journal Articles" },
+      { key: "workshop", label: "Workshop Papers" },
+      { key: "review", label: "Under Review" }
+    ];
+    var allPubs = Array.prototype.slice.call(pubHost.querySelectorAll(".pub"));
+    allPubs.forEach(function (pub, i) {
+      pub.setAttribute("data-order", i);
+    });
+    var search = document.querySelector(".pub-filter");
+    var typeBtns = Array.prototype.slice.call(document.querySelectorAll("[data-type-filter]"));
+    var leadBtn = document.querySelector("[data-lead-filter]");
+    var groupBtns = Array.prototype.slice.call(document.querySelectorAll("[data-group-by]"));
+    var countLine = document.querySelector("[data-pub-count]");
+    var emptyMsg = document.querySelector(".pub-empty");
+    var state = { type: "all", lead: false, group: "type", q: "" };
+    try {
+      var savedGroup = localStorage.getItem("pubGroup");
+      if (savedGroup === "type" || savedGroup === "year") state.group = savedGroup;
+    } catch (e) {}
+
+    var countOf = function (fn) {
+      return allPubs.filter(fn).length;
+    };
+    typeBtns.forEach(function (btn) {
+      var key = btn.getAttribute("data-type-filter");
+      var n = countOf(function (p) {
+        return key === "all" || p.getAttribute("data-type") === key;
+      });
+      var slot = btn.querySelector(".pub-chip__n");
+      if (slot) slot.textContent = n;
+      if (!n && key !== "all") btn.hidden = true;
+    });
+    if (leadBtn) {
+      var leadSlot = leadBtn.querySelector(".pub-chip__n");
+      if (leadSlot)
+        leadSlot.textContent = countOf(function (p) {
+          return p.hasAttribute("data-lead");
+        });
+    }
+
+    var byOrder = function (a, b) {
+      return a.getAttribute("data-order") - b.getAttribute("data-order");
+    };
+
+    var apply = function () {
       var shown = 0;
-      pubs.forEach(function (pub) {
-        var hit = !q || pub.textContent.toLowerCase().indexOf(q) !== -1;
-        pub.hidden = !hit;
+      allPubs.forEach(function (p) {
+        var hit =
+          (state.type === "all" || p.getAttribute("data-type") === state.type) &&
+          (!state.lead || p.hasAttribute("data-lead")) &&
+          (!state.q || p.textContent.toLowerCase().indexOf(state.q) !== -1);
+        p.hidden = !hit;
         if (hit) shown++;
       });
-      groups.forEach(function (g) {
-        var any = g.querySelector(".pub:not([hidden])");
-        g.hidden = !any;
+      Array.prototype.forEach.call(pubHost.querySelectorAll("[data-year-group]"), function (g) {
+        var visible = g.querySelectorAll(".pub:not([hidden])").length;
+        g.hidden = !visible;
+        var n = g.querySelector(".pub-year__n");
+        if (n) n.textContent = visible;
       });
-      if (empty) empty.hidden = shown > 0;
+      typeBtns.forEach(function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-type-filter") === state.type ? "true" : "false");
+      });
+      if (leadBtn) leadBtn.setAttribute("aria-pressed", state.lead ? "true" : "false");
+      if (countLine) {
+        countLine.textContent =
+          shown === allPubs.length
+            ? allPubs.length + " publications"
+            : "Showing " + shown + " of " + allPubs.length + " publications";
+      }
+      if (emptyMsg) emptyMsg.hidden = shown > 0;
+    };
+
+    var build = function () {
+      var groups = [];
+      if (state.group === "type") {
+        TYPES.forEach(function (t) {
+          groups.push({
+            label: t.label,
+            items: allPubs.filter(function (p) {
+              return p.getAttribute("data-type") === t.key;
+            })
+          });
+        });
+      } else {
+        var years = [];
+        allPubs.forEach(function (p) {
+          var y = p.getAttribute("data-pub-year");
+          if (years.indexOf(y) === -1) years.push(y);
+        });
+        years.sort(function (a, b) {
+          return b - a;
+        });
+        years.forEach(function (y) {
+          groups.push({
+            label: y,
+            items: allPubs.filter(function (p) {
+              return p.getAttribute("data-pub-year") === y;
+            })
+          });
+        });
+      }
+      pubHost.innerHTML = "";
+      groups.forEach(function (g) {
+        if (!g.items.length) return;
+        var section = document.createElement("section");
+        section.setAttribute("data-year-group", "");
+        var h = document.createElement("h2");
+        h.className = "pub-year";
+        h.appendChild(document.createTextNode(g.label));
+        var n = document.createElement("span");
+        n.className = "pub-year__n";
+        h.appendChild(n);
+        var ul = document.createElement("ul");
+        ul.className = "pub-list";
+        g.items.sort(byOrder).forEach(function (p) {
+          ul.appendChild(p);
+        });
+        section.appendChild(h);
+        section.appendChild(ul);
+        pubHost.appendChild(section);
+      });
+      groupBtns.forEach(function (b) {
+        b.setAttribute("aria-pressed", b.getAttribute("data-group-by") === state.group ? "true" : "false");
+      });
+      apply();
+    };
+
+    typeBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        state.type = b.getAttribute("data-type-filter");
+        apply();
+      });
     });
+    if (leadBtn)
+      leadBtn.addEventListener("click", function () {
+        state.lead = !state.lead;
+        apply();
+      });
+    groupBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        state.group = b.getAttribute("data-group-by");
+        try {
+          localStorage.setItem("pubGroup", state.group);
+        } catch (e) {}
+        build();
+      });
+    });
+    if (search)
+      search.addEventListener("input", function () {
+        state.q = search.value.trim().toLowerCase();
+        apply();
+      });
+
+    Array.prototype.forEach.call(document.querySelectorAll("[data-pub-controls]"), function (el) {
+      el.hidden = false;
+    });
+    build();
+    if (location.hash) {
+      var target = document.getElementById(location.hash.slice(1));
+      if (target && target.classList.contains("pub")) target.scrollIntoView();
+    }
   }
 
   /* -------------------------------------------------- CV table of contents */
